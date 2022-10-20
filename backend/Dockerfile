@@ -1,11 +1,18 @@
-FROM  python:3.8
+FROM node:16
 
+# Create app directory
+# Set the working directory to /app inside the container
 WORKDIR /app
 
-COPY requirements.txt ./
+# Copy app files
+COPY . /app/
 
-RUN pip install -r requirements.txt
+RUN npm install
+# If you are building your code for production
+# RUN npm ci --only=production
 
-COPY . ./
+# Bundle app source
+COPY . .
 
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+EXPOSE 8000
+CMD [ "npm", "start" ]

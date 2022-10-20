@@ -1,0 +1,72 @@
+.GlobalNav {
+  .Gradient_Cont {
+    height: 2px;
+  }
+
+  .Nav_Container {
+    align-items: center;
+    display: flex;
+    height: 3.25rem;
+    position: relative;
+    color: white;
+
+    .nav_content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .logo {
+        margin-right: 40px;
+        cursor: pointer;
+      }
+
+      .nav_items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+      }
+
+      .user_actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-left: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .Search_Container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    color: white;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+    .search_input {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+
+      svg {
+        height: 14px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

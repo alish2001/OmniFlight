@@ -42,6 +42,8 @@ services:
       - "3000:3000"
     depends_on:
       - backend
+    environment:
+      - CHOKIDAR_USEPOLLING=true
   # Names our volume
 volumes:
   omniflight-db:

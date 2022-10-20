@@ -1,0 +1,39 @@
+.UserOptions {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  .user_dropdown {
+    display: flex;
+    flex-direction: row;
+    top: 150%;
+    border-radius: 0.5rem;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: max-content;
+    padding: 1rem;
+
+    .dropdown_option {
+      font-size: 0.8rem;
+      line-height: 1rem;
+      font-weight: 650;
+      margin-bottom: 0.25rem;
+      margin-top: 0.25rem;
+    }
+
+    .dropdown_option:hover {
+      text-decoration-line: underline;
+      --tw-text-opacity: 1 !important;
+      color: rgb(221 144 254 / var(--tw-text-opacity)) !important;
+      text-underline-offset: 4px;
+      cursor: pointer;
+    }
+
+    .sign_out {
+      height: 2.75rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

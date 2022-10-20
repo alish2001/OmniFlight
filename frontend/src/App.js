@@ -1,21 +1,26 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+//Components
+import GlobalNav from "./components/GlobalNav";
+
+//Pages
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello, welcome to OmniFlight.</p>
-        <a
-          className="App-link"
-          href="https://github.com/alish2001/OmniFlight"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github
-        </a>
-      </header>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <GlobalNav />
+              <Home />
+            </div>
+          }
+        />
+      </Routes>
     </div>
   );
 }

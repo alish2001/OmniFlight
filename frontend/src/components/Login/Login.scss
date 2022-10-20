@@ -1,0 +1,33 @@
+.input-label {
+  margin-right: auto;
+  padding: 15px 5px 5px 0px;
+}
+
+.input-container {
+  padding-top: 10px;
+}
+
+.login-container {
+  width: 70%;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.text-link {
+  color: rgb(0, 110, 255);
+  margin-left: 10px;
+  border-bottom: 1px solid rgba(0, 110, 255, 0);
+}
+.text-link:hover {
+  border-bottom: 1px solid rgb(0, 110, 255);
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+  margin: 0px;
+}
