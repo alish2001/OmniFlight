@@ -9,31 +9,8 @@ import UserOptions from "./components/UserOptions";
 import "./GlobalNav.scss";
 
 function GlobalNav() {
-  let active_nav = {};
-  const node = useRef();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    nav_options.forEach((nav) => {
-      active_nav[nav.id] = false;
-    });
-  }, []);
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClick);
-    return () => {
-      document.removeEventListener("mousedown", handleClick);
-    };
-  }, []);
-
-  const handleClick = (e) => {
-    if (node.current && !node.current.contains(e.target)) {
-      setShowSearch(false);
-      return;
-    }
-  };
-
-  const [activeOption, setActiveOption] = useState(active_nav);
   const [showSearch, setShowSearch] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -48,7 +25,7 @@ function GlobalNav() {
     <div className="GlobalNav">
       <div className="gradient-animation Gradient_Cont"></div>
       <div className="Nav_Container primary_bg_color">
-        <div className="nav_content elements_container">
+        <div className="nav_content">
           <div
             className="logo"
             onClick={() => {
@@ -71,7 +48,7 @@ function GlobalNav() {
         </div>
       </div>
       {showSearch && (
-        <div className="Search_Container bg_grey_500" ref={node}>
+        <div className="Search_Container bg_grey_500">
           <div className="search_input elements_container">
             <Search />
             <input
