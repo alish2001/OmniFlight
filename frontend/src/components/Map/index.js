@@ -28,5 +28,5 @@ export default function CustomMap({ google, locations = [] }) {
 }
 
 // export default GoogleApiWrapper({
-//   apiKey: "AIzaSyA77pNGXUvPDMhZdfgY2_TuPHYJeEyIXdA",
+//   apiKey: "",
 // })(CustomMap);
