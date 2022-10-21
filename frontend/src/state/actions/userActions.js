@@ -1,4 +1,4 @@
-import { USER_LOGIN, USER_LOGOUT, USER_SIGNUP } from "./types";
+import { USER_LOGIN, USER_LOGOUT } from "./types";
 
 export const loginUser = (data) => {
   return {
@@ -8,7 +8,6 @@ export const loginUser = (data) => {
       first_name: data.first_name,
       last_name: data.last_name,
       email: data.email,
-      phone_number: data.phone_number,
     },
   };
 };

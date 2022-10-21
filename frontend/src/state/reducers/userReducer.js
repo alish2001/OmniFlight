@@ -5,7 +5,6 @@ const initialState = {
   first_name: null,
   last_name: null,
   email: null,
-  phone_number: null,
   isLoggedIn: false,
 };
 
@@ -18,7 +17,6 @@ export default function userReducer(state = initialState, action) {
         first_name: action.payload.first_name,
         last_name: action.payload.last_name,
         email: action.payload.email,
-        phone_number: action.payload.phone_number,
         isLoggedIn: true,
       };
     case USER_LOGOUT:

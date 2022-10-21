@@ -38,14 +38,13 @@ function Login({ show, setShow }) {
 
     Axios.post("http://localhost:8000/api/login/", body)
       .then((response) => {
-        let { id, first_name, last_name, email, phone_number } = response.data;
+        let { id, first_name, last_name, email } = response.data;
         dispatch(
           loginUser({
             user_id: id,
             first_name,
             last_name,
             email,
-            phone_number,
           })
         );
         setShow(false);

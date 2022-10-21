@@ -10,7 +10,6 @@ function Register({ setRegister, setShow }) {
   const [password, setPassword] = useState();
   const [first_name, setFirstName] = useState();
   const [last_name, setLastName] = useState();
-  const [phone_number, setPhoneNumber] = useState();
 
   const [error, setError] = useState(false);
 
@@ -18,19 +17,18 @@ function Register({ setRegister, setShow }) {
   const navigate = useNavigate();
 
   const onSubmit = () => {
-    const body = { first_name, last_name, email, password, phone_number };
+    const body = { first_name, last_name, email, password };
     console.log(body);
 
     Axios.post("http://localhost:8000/api/register/", body)
       .then((response) => {
-        let { id, first_name, last_name, email, phone_number } = response.data;
+        let { id, first_name, last_name, email } = response.data;
         dispatch(
           loginUser({
             user_id: id,
             first_name,
             last_name,
             email,
-            phone_number,
           })
         );
         setShow(false);
@@ -77,14 +75,6 @@ function Register({ setRegister, setShow }) {
           type="password"
           required
           onChange={(e) => setPassword(e.target.value)}
-        />
-        <label className="input-label">Phone Number</label>
-        <input
-          className="white-input"
-          type="tel"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          required
-          onChange={(e) => setPhoneNumber(e.target.value)}
         />
       </div>
       <button

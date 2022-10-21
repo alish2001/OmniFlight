@@ -19,40 +19,37 @@ const db = mysql.createConnection({
 });
 
 app.post("/register", (req, res) => {
-  const name = req.body.name;
-  const username = req.body.username;
+  const first_name = req.body.first_name;
+  const last_name = req.body.last_name;
+  const email = req.body.email;
   const password = req.body.password;
 
-  db.query(
-    "SELECT * FROM users WHERE username = ?",
-    [username],
-    (err, result) => {
-      if (err) {
-        res.send({ err: err });
-      }
-      if (result.length > 0) {
-        console.log("Username Already Exists!");
-        res.send({ message: "Username Already Exists!" });
-      } else {
-        console.log("Username is good!");
-        bcrypt.hash(password, saltRounds, (err, hash) => {
-          if (err) {
-            console.log(err);
-          }
-          db.query(
-            "INSERT INTO users (person_name, username, pass) VALUES (?,?,?)",
-            [name, username, hash],
-            (err, result) => {
-              if (err) {
-                res.send({ err: err });
-              }
-              res.send(result);
-            }
-          );
-        });
-      }
+  db.query("SELECT * FROM users WHERE email = ?", [email], (err, result) => {
+    if (err) {
+      res.send({ err: err });
     }
-  );
+    if (result.length > 0) {
+      console.log("Email Already Exists!");
+      res.send({ message: "Email Already Exists!" });
+    } else {
+      console.log("Email is good!");
+      bcrypt.hash(password, saltRounds, (err, hash) => {
+        if (err) {
+          console.log(err);
+        }
+        db.query(
+          "INSERT INTO users (first_name, last_name, email, password) VALUES (?,?,?,?)",
+          [first_name, last_name, email, hash],
+          (err, result) => {
+            if (err) {
+              res.send({ err: err });
+            }
+            res.send(result);
+          }
+        );
+      });
+    }
+  });
 });
 
 const verifyJWT = (req, res, next) => {
@@ -76,35 +73,31 @@ app.get("/authUser", verifyJWT, (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-  const username = req.body.username;
+  const email = req.body.email;
   const password = req.body.password;
 
-  db.query(
-    "SELECT * FROM users WHERE username = ?;",
-    username,
-    (err, result) => {
-      if (err) {
-        res.send({ err: err });
-      }
-
-      if (result.length > 0) {
-        bcrypt.compare(password, result[0].pass, (error, response) => {
-          if (response) {
-            const id = result[0].id;
-            const token = JWT.sign({ id }, "zainafzal52", {
-              expiresIn: 300,
-            });
-
-            res.json({ authorized: true, token: token, result });
-          } else {
-            res.send({ message: "Incorrect Username/Password!" });
-          }
-        });
-      } else {
-        res.send({ message: "User doesn't exist!" });
-      }
+  db.query("SELECT * FROM users WHERE email = ?;", username, (err, result) => {
+    if (err) {
+      res.send({ err: err });
     }
-  );
+
+    if (result.length > 0) {
+      bcrypt.compare(password, result[0].password, (error, response) => {
+        if (response) {
+          const id = result[0].id;
+          const token = JWT.sign({ id }, email, {
+            expiresIn: 300,
+          });
+
+          res.json({ authorized: true, token: token, result });
+        } else {
+          res.send({ message: "Incorrect Email/Password!" });
+        }
+      });
+    } else {
+      res.send({ message: "User doesn't exist!" });
+    }
+  });
 });
 
 app.listen(PORT, () => {
