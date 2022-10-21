@@ -6,7 +6,7 @@ CREATE TABLE `omniflight`.`users` (
   `last_name` VARCHAR(45) NULL,
   `password` VARCHAR(45) NULL,
 PRIMARY KEY (`userid`),
-UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
+UNIQUE INDEX `userid_UNIQUE` (`userid` ASC) VISIBLE);
 
 -- Airports(airportUID, name, city, country, lat, long, altitude, timezone)
 CREATE TABLE `omniflight`.`airports` (
@@ -81,4 +81,11 @@ CONSTRAINT `routeUID`
   ON DELETE CASCADE
   ON UPDATE CASCADE);
 
+INSERT INTO `users` VALUES (1, 'contact@alish.se', 'Ali', 'Shariatmadari', 'password');
 
+-- LOAD DATA INFILE "/airlines.dat"
+-- INTO TABLE omniflight.airlines
+-- COLUMNS TERMINATED BY ','
+-- OPTIONALLY ENCLOSED BY '"'
+-- ESCAPED BY '"'
+-- LINES TERMINATED BY '\n';

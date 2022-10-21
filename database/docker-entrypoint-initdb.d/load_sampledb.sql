@@ -1,0 +1,1 @@
+-- INSERT INTO `users` VALUES (1, 'contact@alish.se', 'Ali', 'Shariatmadari', 'password');
