@@ -2,9 +2,10 @@ version: "3.9"
 
 services:
   db:
-    image: mysql
+    build:
+      context: ./database/
+      dockerfile: Dockerfile
     restart: always
-    # command: mysql -u {$MYSQL_USER} -p {$MYSQL_PASSWORD} {$MYSQL_DATABASE} < text_file
     environment:
       MYSQL_DATABASE: "omniflight"
       # So you don't have to use root, but you can if you like
