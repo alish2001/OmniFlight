@@ -7,7 +7,7 @@ The sickest flight route explorer on the block.
 ```shell
 git clone https://github.com/alish2001/OmniFlight.git
 cd OmniFlight/
-docker-compose up
+docker-compose up --build
 ```
 
 The app should now be available on `localhost:3000`
