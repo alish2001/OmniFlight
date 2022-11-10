@@ -31,10 +31,11 @@ UNIQUE INDEX `airlineuid_UNIQUE` (`airlineuid` ASC) VISIBLE);
 
 -- Planes(name, planeUID)
 CREATE TABLE `omniflight`.`planes` (
-  `name` VARCHAR(45) NOT NULL,
-  `planeUID` VARCHAR(3) NOT NULL,
-PRIMARY KEY (`planeUID`),
-UNIQUE INDEX `iata_UNIQUE` (`planeUID` ASC) VISIBLE);
+  `name` VARCHAR(75) NOT NULL,
+  `iata` VARCHAR(3),
+  `icao` VARCHAR(4),
+PRIMARY KEY (`iata`, `icao`),
+UNIQUE INDEX `plane_UNIQUE` (`iata` ASC) VISIBLE);
 
 -- Routes(routeUID, airlineUID, originalairportUID, destairportUID)
 CREATE TABLE `omniflight`.`routes` (
@@ -83,8 +84,8 @@ CONSTRAINT `routeUID`
 
 INSERT INTO `users` VALUES (1, 'contact@alish.se', 'Ali', 'Shariatmadari', 'password');
 
--- LOAD DATA INFILE "/airlines.dat"
--- INTO TABLE omniflight.airlines
+-- LOAD DATA INFILE "/var/lib/mysql-files/planesOG.dat"
+-- INTO TABLE omniflight.planes
 -- COLUMNS TERMINATED BY ','
 -- OPTIONALLY ENCLOSED BY '"'
 -- ESCAPED BY '"'
