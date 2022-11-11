@@ -1,10 +1,10 @@
 -- User(userid, email, first_name, last_name, password)
 CREATE TABLE `users` (
-  `userid` INT UNSIGNED PRIMARY KEY,
+  `userid` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
   `email` VARCHAR(45) NOT NULL,
   `first_name` VARCHAR(45),
   `last_name` VARCHAR(45),
-  `password` VARCHAR(45)
+  `password` VARCHAR(255)
 );
 
 -- Airports(airportUID, name, city, country, lat, long, altitude, timezone)

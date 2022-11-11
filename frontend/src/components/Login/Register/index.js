@@ -1,48 +1,24 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import {
-  Layout,
-  Form,
-  Input,
-  Button,
-  Typography,
-  Divider,
-  Row,
-  Card,
-  Col,
-} from "antd";
-import { onLogin } from "../../api";
+import { Layout, Form, Input, Button, Typography, Card, Col, Row } from "antd";
+import { onRegister } from "../../../api";
 import React, { useState } from "react";
-import { login } from "../../state/Reducers/userReducer";
 
 const {} = Layout;
 const { Title, Text, Link } = Typography;
 
-const Login = () => {
+const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [error, setError] = useState(false);
+
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
 
   const onSubmit = async (values) => {
-    let res = await onLogin(values);
-    if (res) {
-      let { userid, first_name, last_name, email } = res.data;
-      dispatch(
-        login({
-          userid,
-          first_name,
-          last_name,
-          email,
-        })
-      );
-      setError(false);
-      navigate("/");
-    } else {
-      setError(true);
-    }
+    let res = await onRegister(values);
+    res ? navigate("/login") : setError(true);
   };
   return (
     <Layout
@@ -56,10 +32,11 @@ const Login = () => {
       <Card style={{ width: 500 }}>
         <Col align="center">
           <Title>Omniflight</Title>
-          {error && <Text type="danger">Login Failed!</Text>}
+          {error && <Text type="danger">Register Failed!</Text>}
         </Col>
         <Form
           name="login"
+          justify="center"
           labelCol={{
             span: 8,
           }}
@@ -74,13 +51,37 @@ const Login = () => {
           autoComplete="off"
         >
           <Form.Item
-            label="Email"
-            name="email"
-            justify="center"
+            label="First Name"
+            name="first_name"
             rules={[
               {
                 required: true,
-                message: "Please input your username!",
+                message: "Please input your first name!",
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+          <Form.Item
+            label="Last Name"
+            name="last_name"
+            rules={[
+              {
+                required: true,
+                message: "Please input your last name!",
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+
+          <Form.Item
+            label="Email"
+            name="email"
+            rules={[
+              {
+                required: true,
+                message: "Please input your email!",
               },
             ]}
           >
@@ -99,21 +100,15 @@ const Login = () => {
           >
             <Input.Password />
           </Form.Item>
+
           <Row justify="center">
             <Button type="primary" htmlType="submit">
-              Submit
+              Register
             </Button>
           </Row>
         </Form>
-        <Row justify="center">
-          <Divider />
-          <Text>
-            Don't have an account?{" "}
-            <Link onClick={() => navigate("/register")}>Register</Link>
-          </Text>
-        </Row>
       </Card>
     </Layout>
   );
 };
-export default Login;
+export default Register;
