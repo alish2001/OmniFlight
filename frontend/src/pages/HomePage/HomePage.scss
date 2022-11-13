@@ -1,0 +1,28 @@
+.Homepage_container {
+  .ant-menu-item {
+    display: flex;
+    flex-direction: column;
+    height: 80px !important;
+    justify-content: center;
+    align-items: center;
+    .ant-menu-title-content {
+      margin: 0 !important;
+    }
+  }
+  .ant-drawer {
+    z-index: 7;
+  }
+
+  .ant-drawer-content-wrapper {
+    left: 90px !important;
+    top: 64px !important;
+    position: absolute;
+  }
+
+  .sidebar_container {
+    position: "absolute";
+    left: 0;
+    z-index: 9;
+    height: "100%";
+  }
+}

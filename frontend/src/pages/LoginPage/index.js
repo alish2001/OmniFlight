@@ -14,7 +14,7 @@ import {
 } from "antd";
 import { onLogin } from "../../api";
 import React, { useState } from "react";
-import { login } from "../../state/Reducers/userReducer";
+import { login } from "../../state/reducers/userReducer";
 
 const {} = Layout;
 const { Title, Text, Link } = Typography;
