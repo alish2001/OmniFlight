@@ -4,6 +4,7 @@ services:
     build:
       context: ./database/
       dockerfile: Dockerfile
+    command: --secure-file-priv=data
     restart: always
     environment:
       MYSQL_DATABASE: "omniflight"

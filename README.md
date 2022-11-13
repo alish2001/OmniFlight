@@ -2,6 +2,10 @@
 
 The sickest flight route explorer on the block.
 
+# Data loading
+The database will initialize tables and load data from the /database/data directory upon the creation of the docker volume aka first start.
+If you want to run this auto-creation again, delete your docker volume and restart the docker-compose.
+
 # Usage
 
 ```shell
