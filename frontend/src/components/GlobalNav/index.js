@@ -25,7 +25,10 @@ const GlobalNav = () => {
   }
 
   return (
-    <Header className="header">
+    <Header
+      className="header"
+      style={{ position: "absolute", top: 0, zIndex: 10, width: "100%" }}
+    >
       <Row justify="space-between">
         <div style={{ fontSize: "25px", color: "white" }}>Omniflight</div>
         <Menu theme="dark" mode="horizontal" items={items} />

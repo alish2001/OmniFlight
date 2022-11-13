@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { LoginOutlined } from "@ant-design/icons";
 import {
   Layout,
   Form,
@@ -100,8 +101,14 @@ const Login = () => {
             <Input.Password />
           </Form.Item>
           <Row justify="center">
-            <Button type="primary" htmlType="submit">
-              Submit
+            <Button
+              type="primary"
+              shape="round"
+              icon={<LoginOutlined />}
+              size="large"
+              htmlType="submit"
+            >
+              Sign in
             </Button>
           </Row>
         </Form>

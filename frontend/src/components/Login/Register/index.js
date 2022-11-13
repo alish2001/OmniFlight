@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Layout, Form, Input, Button, Typography, Card, Col, Row } from "antd";
 import { onRegister } from "../../../api";
 import React, { useState } from "react";
+import { LoginOutlined } from "@ant-design/icons";
 
 const {} = Layout;
 const { Title, Text, Link } = Typography;
@@ -102,7 +103,13 @@ const Register = () => {
           </Form.Item>
 
           <Row justify="center">
-            <Button type="primary" htmlType="submit">
+            <Button
+              type="primary"
+              shape="round"
+              icon={<LoginOutlined />}
+              size="large"
+              htmlType="submit"
+            >
               Register
             </Button>
           </Row>
