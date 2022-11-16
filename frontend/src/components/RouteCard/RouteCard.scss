@@ -1,0 +1,33 @@
+.routecard_container {
+  width: 100%;
+  .ant-card-body {
+    padding: 10px;
+
+    .non_favorited_icon {
+      color: grey;
+      position: absolute;
+      right: 10px;
+      font-size: 15px;
+    }
+
+    .non_favorited_icon:hover {
+      color: rgb(240, 236, 0);
+    }
+
+    .favorited_icon {
+      color: rgb(240, 236, 0);
+      position: absolute;
+      right: 10px;
+      font-size: 15px;
+    }
+
+    .favorited_icon:hover {
+      color: grey;
+    }
+
+    .ant-typography {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}

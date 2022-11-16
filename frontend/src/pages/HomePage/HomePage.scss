@@ -9,20 +9,20 @@
       margin: 0 !important;
     }
   }
-  .ant-drawer {
-    z-index: 7;
-  }
+}
 
-  .ant-drawer-content-wrapper {
-    left: 90px !important;
-    top: 64px !important;
-    position: absolute;
-  }
+.sidebar_container {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  height: 100%;
+}
+.ant-drawer {
+  z-index: 7;
+}
 
-  .sidebar_container {
-    position: "absolute";
-    left: 0;
-    z-index: 9;
-    height: "100%";
-  }
+.ant-drawer-content-wrapper {
+  left: 90px !important;
+  top: 64px !important;
+  position: absolute;
 }
