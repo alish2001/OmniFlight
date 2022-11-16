@@ -4,7 +4,8 @@ services:
     build:
       context: ./database/
       dockerfile: Dockerfile
-    command: --secure-file-priv=data
+    container_name: omniflight_db
+    hostname: db
     restart: always
     environment:
       MYSQL_DATABASE: "omniflight"
@@ -27,9 +28,12 @@ services:
     build:
       context: ./backend/
       dockerfile: Dockerfile
+    container_name: omniflight_backend
+    hostname: backend
     ports:
       - "8000:8000"
     environment:
+      - DB_ADDRESS=db
       - DB_NAME=omniflight
       - DB_USER=user
       - DB_PASSWORD=password
@@ -39,6 +43,8 @@ services:
     build:
       context: ./frontend/
       dockerfile: Dockerfile
+    container_name: omniflight_frontend
+    hostname: frontend
     ports:
       - "3000:3000"
     depends_on:

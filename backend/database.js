@@ -1,9 +1,9 @@
 var mysql = require("mysql2");
 var db = mysql.createConnection({
-  user: "root",
-  host: "127.0.0.1",
-  password: "password",
-  database: "omniflight",
+  user: process.env.DB_USER || "user",
+  host: process.env.DB_ADDRESS || "127.0.0.1",
+  password: process.env.DB_PASSWORD || "password",
+  database: process.env.DB_NAME || "omniflight",
   port: "3306",
 });
 
