@@ -15,12 +15,12 @@ const RouteCard = ({ routeData, isFavorite }) => {
   const [favorite, setFavorite] = useState(isFavorite);
 
   const {
+    routeUID,
     origin,
     origin_iata,
     destination,
     destination_iata,
     airline,
-    airplane_type,
   } = routeData;
 
   return (
