@@ -1,246 +1,245 @@
-"Aerospatiale (Nord) 262"
-"Aerospatiale (Sud Aviation) Se.210 Caravelle"
-"Aerospatiale SN.601 Corvette"
-"Aerospatiale/Alenia ATR 42-300"
-"Aerospatiale/Alenia ATR 42-500"
-"Aerospatiale/Alenia ATR 42-600"
-"Aerospatiale/Alenia ATR 72"
-"Airbus A300"
-"Airbus A300-600"
-"Airbus A300-600ST Super Transporter / Beluga"
-"Airbus A310"
-"Airbus A318"
-"Airbus A319"
-"Airbus A319neo"
-"Airbus A320"
-"Airbus A320neo"
-"Airbus A321"
-"Airbus A321neo"
-"Airbus A330"
-"Airbus A330-200"
-"Airbus A330-300"
-"Airbus A330-700 Beluga XL"
-"Airbus A330-800neo"
-"Airbus A330-900neo"
-"Airbus A340"
-"Airbus A340-200"
-"Airbus A340-300"
-"Airbus A340-500"
-"Airbus A340-600"
-"Airbus A350"
-"Airbus A350-1000"
-"Airbus A350-900"
-"Airbus A380"
-"Airbus A380-800"
-"Antonov AN-12"
-"Antonov AN-124 Ruslan"
-"Antonov AN-140"
-"Antonov An-148"
-"Antonov An-158"
-"Antonov An-225 Mriya"
-"Antonov AN-24"
-"Antonov AN-26"
-"Antonov AN-28"
-"Antonov AN-30"
-"Antonov AN-32"
-"Antonov AN-72"
-"Avro RJ100"
-"Avro RJ70"
-"Avro RJ85"
-"BAe 146"
-"BAe 146-100"
-"BAe 146-200"
-"BAe 146-300"
-"Beechcraft 1900"
-"Beechcraft Baron"
-"Beechcraft Baron / 55 Baron"
-"Bell 212"
-"Boeing 707"
-"Boeing 717"
-"Boeing 720B"
-"Boeing 727"
-"Boeing 727-100"
-"Boeing 727-200"
-"Boeing 737"
-"Boeing 737 MAX 10"
-"Boeing 737 MAX 7"
-"Boeing 737 MAX 8"
-"Boeing 737 MAX 9"
-"Boeing 737-200"
-"Boeing 737-300"
-"Boeing 737-400"
-"Boeing 737-500"
-"Boeing 737-600"
-"Boeing 737-700"
-"Boeing 737-800"
-"Boeing 737-900"
-"Boeing 747"
-"Boeing 747 LCF Dreamlifter"
-"Boeing 747-100"
-"Boeing 747-200"
-"Boeing 747-300"
-"Boeing 747-400"
-"Boeing 747-400D"
-"Boeing 747-8"
-"Boeing 747SP"
-"Boeing 747SR"
-"Boeing 757"
-"Boeing 757-200"
-"Boeing 757-300"
-"Boeing 767"
-"Boeing 767-200"
-"Boeing 767-300"
-"Boeing 767-400"
-"Boeing 777"
-"Boeing 777-200"
-"Boeing 777-200LR"
-"Boeing 777-300"
-"Boeing 777-300ER"
-"Boeing 777-8"
-"Boeing 777-9"
-"Boeing 787"
-"Boeing 787-10"
-"Boeing 787-8"
-"Boeing 787-9"
-"Bombardier 415"
-"Bombardier BD-100 Challenger 300"
-"Bombardier CS100"
-"Bombardier CS300"
-"Bombardier Global Express"
-"British Aerospace (BAC) One Eleven"
-"British Aerospace 125 series / Hawker/Raytheon 700/800/800XP/850/900"
-"British Aerospace 125-1000 series / Hawker/Raytheon 1000"
-"British Aerospace ATP"
-"British Aerospace Jetstream 31"
-"British Aerospace Jetstream 32"
-"British Aerospace Jetstream 41"
-"Canadair Challenger"
-"Canadair CL-44"
-"Canadair Regional Jet 100"
-"Canadair Regional Jet 1000"
-"Canadair Regional Jet 200"
-"Canadair Regional Jet 700"
-"Canadair Regional Jet 900"
-"Cessna 152"
-"Cessna 172"
-"Cessna 182 Skylane"
-"Cessna 208 Caravan"
-"Cessna 210 Centurion"
-"Cessna Citation CJ3"
-"Cessna Citation CJ4"
-"Cessna Citation Excel"
-"Cessna Citation I"
-"Cessna Citation II"
-"Cessna Citation Mustang"
-"Cessna Citation Sovereign"
-"Cessna Citation X"
-"COMAC C-919"
-"Concorde"
-"Dassault Falcon 2000"
-"Dassault Falcon 50"
-"Dassault Falcon 7X"
-"Dassault Falcon 900"
-"De Havilland Canada DHC-2 Beaver"
-"De Havilland Canada DHC-2 Turbo-Beaver"
-"De Havilland Canada DHC-3 Otter"
-"De Havilland Canada DHC-4 Caribou"
-"De Havilland Canada DHC-6 Twin Otter"
-"De Havilland Canada DHC-7 Dash 7"
-"De Havilland Canada DHC-8-100 Dash 8 / 8Q"
-"De Havilland Canada DHC-8-200 Dash 8 / 8Q"
-"De Havilland Canada DHC-8-300 Dash 8"
-"De Havilland Canada DHC-8-400 Dash 8Q"
-"De Havilland DH.104 Dove"
-"De Havilland DH.114 Heron"
-"Douglas DC-10"
-"Douglas DC-3"
-"Douglas DC-6"
-"Douglas DC-8-50"
-"Douglas DC-8-62"
-"Douglas DC-8-72"
-"Douglas DC-9-10"
-"Douglas DC-9-20"
-"Douglas DC-9-30"
-"Douglas DC-9-40"
-"Douglas DC-9-50"
-"Embraer 170"
-"Embraer 175"
-"Embraer 175 (long wing)"
-"Embraer 175 (short wing)"
-"Embraer 190"
-"Embraer 195"
-"Embraer E190-E2"
-"Embraer E195-E2"
-"Embraer EMB 110 Bandeirante"
-"Embraer EMB 120 Brasilia"
-"Embraer Legacy 450"
-"Embraer Legacy 600"
-"Embraer Phenom 100"
-"Embraer Phenom 300"
-"Embraer RJ135"
-"Embraer RJ140"
-"Embraer RJ145"
-"Fairchild Dornier 328JET"
-"Fairchild Dornier Do.228"
-"Fairchild Dornier Do.328"
-"Fokker 100"
-"Fokker 50"
-"Fokker 70"
-"Fokker F27 Friendship"
-"Fokker F28 Fellowship"
-"Gulfstream Aerospace G-159 Gulfstream I"
-"Gulfstream G280"
-"Gulfstream G650"
-"Gulfstream IV"
-"Gulfstream V"
-"Gulfstream/Rockwell (Aero) Commander"
-"Gulfstream/Rockwell (Aero) Turbo Commander"
-"Harbin Yunshuji Y12"
-"Hawker Siddeley HS 748"
-"Ilyushin IL114"
-"Ilyushin IL18"
-"Ilyushin IL62"
-"Ilyushin IL76"
-"Ilyushin IL86"
-"Ilyushin IL96"
-"Learjet 35"
-"Learjet 60"
-"Lockheed L-1011 Tristar"
-"Lockheed L-1049 Super Constellation"
-"Lockheed L-182 / 282 / 382 (L-100) Hercules"
-"Lockheed L-188 Electra"
-"McDonnell Douglas MD-11"
-"McDonnell Douglas MD-81"
-"McDonnell Douglas MD-82"
-"McDonnell Douglas MD-83"
-"McDonnell Douglas MD-87"
-"McDonnell Douglas MD-88"
-"McDonnell Douglas MD-90"
-"NAMC YS-11"
-"Partenavia P.68"
-"Pilatus Britten-Norman BN-2A Mk III Trislander"
-"Pilatus Britten-Norman BN-2A/B Islander"
-"Pilatus PC-12"
-"Pilatus PC-6 Turbo Porter"
-"Piper PA-28 (above 200 hp)"
-"Piper PA-28 (up to 180 hp)"
-"Piper PA-31 Navajo"
-"Piper PA-44 Seminole"
-"Piper PA-46"
-"Saab 2000"
-"Saab SF340A/B"
-"Shorts SC-5 Belfast"
-"Shorts SC-7 Skyvan"
-"Shorts SD.330"
-"Shorts SD.360"
-"Sikorsky S-58T"
-"Sikorsky S-61"
-"Sikorsky S-76"
-"Sikorsky S-92"
-"Sukhoi Superjet 100-95"
-"Tupolev Tu-134"
-"Tupolev Tu-144"
-"Tupolev Tu-154"
-"Tupolev Tu-204"
-"Yakovlev Yak-40"
-"Yakovlev Yak-42"
+Aerospatiale AS350 / AS355
+Aerospatiale (Nord) 262
+Aerospatiale (Sud Aviation) Se.210 Caravelle
+Aerospatiale SN.601 Corvette
+Aerospatiale/Alenia ATR 42-300
+Aerospatiale/Alenia ATR 42-500
+Aerospatiale/Alenia ATR 42-600
+Aerospatiale/Alenia ATR 72
+Airbus A300
+Airbus A300-600
+Airbus A300-600ST Super Transporter / Beluga
+Airbus A310
+Airbus A318
+Airbus A319
+Airbus A319neo
+Airbus A320
+Airbus A320neo
+Airbus A321
+Airbus A321neo
+Airbus A330
+Airbus A330-200
+Airbus A330-300
+Airbus A330-800neo
+Airbus A330-900neo
+Airbus A340
+Airbus A340-200
+Airbus A340-300
+Airbus A340-500
+Airbus A340-600
+Airbus A350
+Airbus A350-1000
+Airbus A350-900
+Airbus A380
+Airbus A380-800
+Antonov AN-12
+Antonov AN-124 Ruslan
+Antonov AN-140
+Antonov An-148
+Antonov An-158
+Antonov An-225 Mriya
+Antonov AN-24
+Antonov AN-26
+Antonov AN-28
+Antonov AN-30
+Antonov AN-32
+Antonov AN-72
+Avro RJ100
+Avro RJ70
+Avro RJ85
+Comac ARJ21
+BAe 146
+BAe 146-100
+BAe 146-200
+BAe 146-300
+Beechcraft 1900
+Beechcraft Baron
+Bell 212
+Boeing 707
+Boeing 717
+Boeing 720B
+Boeing 727
+Boeing 727-100
+Boeing 727-200
+Boeing 737
+Boeing 737 MAX 10
+Boeing 737 MAX 7
+Boeing 737 MAX 8
+Boeing 737 MAX 9
+Boeing 737-200
+Boeing 737-300
+Boeing 737-400
+Boeing 737-500
+Boeing 737-600
+Boeing 737-700
+Boeing 737-800
+Boeing 737-900
+Boeing 747
+Boeing 747 LCF Dreamlifter
+Boeing 747-100
+Boeing 747-200
+Boeing 747-300
+Boeing 747-400
+Boeing 747-400D
+Boeing 747-8
+Boeing 747SP
+Boeing 747SR
+Boeing 757
+Boeing 757-200
+Boeing 757-300
+Boeing 767
+Boeing 767-200
+Boeing 767-300
+Boeing 767-400
+Boeing 777
+Boeing 777-200
+Boeing 777-200LR
+Boeing 777-300
+Boeing 777-300ER
+Boeing 777-8
+Boeing 777-9
+Boeing 787
+Boeing 787-10
+Boeing 787-8
+Boeing 787-9
+Bombardier CS100
+Bombardier CS300
+Bombardier Global Express
+British Aerospace (BAC) One Eleven
+British Aerospace 125 series / Hawker/Raytheon 700/800/800XP/850/900
+British Aerospace 125-1000 series / Hawker/Raytheon 1000
+British Aerospace ATP
+British Aerospace Jetstream 31
+British Aerospace Jetstream 32
+British Aerospace Jetstream 41
+Canadair Challenger
+Canadair CL-44
+Canadair Regional Jet 100
+Canadair Regional Jet 1000
+Canadair Regional Jet 200
+Canadair Regional Jet 700
+Canadair Regional Jet 900
+Cessna 172
+Cessna 182 Skylane
+Cessna 208 Caravan
+Cessna 210 Centurion
+Cessna Citation CJ3
+Cessna Citation CJ4
+Cessna Citation Excel
+Cessna Citation I
+Cessna Citation II
+Cessna Citation Mustang
+Cessna Citation Sovereign
+Cessna Citation X
+Cessna Light Aircraft
+Concorde
+Dassault Falcon 2000
+Dassault Falcon 50
+Dassault Falcon 7X
+Dassault Falcon 900
+De Havilland Canada DHC-2 Beaver
+De Havilland Canada DHC-2 Turbo-Beaver
+De Havilland Canada DHC-3 Otter
+De Havilland Canada DHC-4 Caribou
+De Havilland Canada DHC-6 Twin Otter
+De Havilland Canada DHC-7 Dash 7
+De Havilland Canada DHC-8 Dash 8
+De Havilland Canada DHC-8-100 Dash 8 / 8Q
+De Havilland Canada DHC-8-200 Dash 8 / 8Q
+De Havilland Canada DHC-8-300 Dash 8
+De Havilland Canada DHC-8-400 Dash 8Q
+De Havilland DH.104 Dove
+De Havilland DH.114 Heron
+Douglas DC-10
+Douglas DC-3
+Douglas DC-6
+Douglas DC-8-50
+Douglas DC-8-62
+Douglas DC-8-72
+Douglas DC-9
+Douglas DC-9-10
+Douglas DC-9-20
+Douglas DC-9-30
+Douglas DC-9-40
+Douglas DC-9-50
+Embraer 170
+Embraer 175
+Embraer 175 (long wing)
+Embraer 175 (short wing)
+Embraer 190
+Embraer 195
+Embraer E190-E2
+Embraer E195-E2
+Embraer EMB 110 Bandeirante
+Embraer EMB 120 Brasilia
+Embraer Legacy 600
+Embraer Phenom 100
+Embraer Phenom 300
+Embraer RJ135
+Embraer RJ140
+Embraer RJ145
+Fairchild Dornier 328JET
+Fairchild Dornier Do.228
+Fairchild Dornier Do.328
+Fokker 100
+Fokker 50
+Fokker 70
+Fokker F27 Friendship
+Fokker F28 Fellowship
+Gulfstream Aerospace G-159 Gulfstream I
+Gulfstream G280
+Gulfstream G650
+Gulfstream IV
+Gulfstream V
+Gulfstream/Rockwell (Aero) Commander
+Gulfstream/Rockwell (Aero) Turbo Commander
+Harbin Yunshuji Y12
+Hawker Siddeley HS 748
+Ilyushin IL114
+Ilyushin IL18
+Ilyushin IL62
+Ilyushin IL76
+Ilyushin IL86
+Ilyushin IL96
+Learjet 35
+Learjet 60
+LET 410
+Lockheed L-1011 Tristar
+Lockheed L-1049 Super Constellation
+Lockheed L-182 / 282 / 382 (L-100) Hercules
+Lockheed L-188 Electra
+McDonnell Douglas MD-11
+McDonnell Douglas MD-80
+McDonnell Douglas MD-81
+McDonnell Douglas MD-82
+McDonnell Douglas MD-83
+McDonnell Douglas MD-87
+McDonnell Douglas MD-88
+McDonnell Douglas MD-90
+Xian MA60
+Xian Yunshuji Y7
+NAMC YS-11
+Partenavia P.68
+Pilatus Britten-Norman BN-2A Mk III Trislander
+Pilatus Britten-Norman BN-2A/B Islander
+Pilatus PC-12
+Pilatus PC-6 Turbo Porter
+Piper Light Air Craft
+Piper PA-31 Navajo
+Piper PA-46
+Saab 2000
+Saab SF340A/B
+Shorts SC-5 Belfast
+Shorts SC-7 Skyvan
+Shorts SD.330
+Shorts SD.360
+Sikorsky S-58T
+Sikorsky S-61
+Sikorsky S-76
+Sikorsky S-92
+Sukhoi Superjet 100-95
+Tupolev Tu-134
+Tupolev Tu-154
+Tupolev Tu-204
+Yakovlev Yak-40
+Yakovlev Yak-42
