@@ -4,15 +4,15 @@ import { IoIosAirplane } from "react-icons/io";
 import { CgArrowLongRight } from "react-icons/cg";
 import "./RouteCard.scss";
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { onAddFavorite, onRemoveFavorite } from "../../api";
 const { Content, Sider } = Layout;
 const { Title, Text, Link } = Typography;
 
 const RouteCard = ({ routeData, isFavorite }) => {
-  const handleFavoriteClick = () => {
-    setFavorite(!favorite);
-  };
-
+  const user = useSelector((state) => state.user);
   const [favorite, setFavorite] = useState(isFavorite);
+  const [error, setError] = useState(false);
 
   const {
     routeUID,
@@ -22,6 +22,23 @@ const RouteCard = ({ routeData, isFavorite }) => {
     destination_iata,
     airline,
   } = routeData;
+
+  const handleFavoriteClick = async () => {
+    let res;
+    let values = { userid: user.userid, routeUID: routeUID }
+    if (!favorite) {
+      res = await onAddFavorite(values);
+    } else {
+      res = await onRemoveFavorite(values);
+    }
+
+    if (res) {
+        setError(false);
+        setFavorite(!favorite);
+      } else {
+        setError(true);
+      }
+  };
 
   return (
     <Card hoverable className="routecard_container">
