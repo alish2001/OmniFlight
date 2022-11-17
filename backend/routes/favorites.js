@@ -2,17 +2,17 @@ var express = require("express");
 var router = express.Router();
 var db = require("../database");
 
-router.get("/test", (req, res) => {
-    db.query("SELECT * FROM favoriteroutes", 
-    (err, result) => {
-        if (err) {
-            console.log(err)
-            return res.send({ err: err });
-        }
-        console.log(result);
-        return res.send(result);
-    });
-});
+// router.get("/test", (req, res) => {
+//     db.query("SELECT * FROM favoriteroutes", 
+//     (err, result) => {
+//         if (err) {
+//             console.log(err)
+//             return res.send({ err: err });
+//         }
+//         console.log(result);
+//         return res.send(result);
+//     });
+// });
 
 router.post("/", (req, res) => {
     const userid = req.body.userid;
