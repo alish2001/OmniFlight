@@ -1,5 +1,6 @@
 .routecard_container {
   width: 100%;
+  margin-bottom: 20px;
   .ant-card-body {
     padding: 10px;
 
@@ -23,6 +24,10 @@
 
     .favorited_icon:hover {
       color: grey;
+    }
+
+    .ant-typography {
+      width: 100px;
     }
   }
 }

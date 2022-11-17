@@ -7,21 +7,21 @@ router.post("/getFilterRoutes", (req, res) => {
   const origin_country = req.body.origin_country;
   const dest_city = req.body.dest_city;
   const dest_country = req.body.dest_country;
-  const origin_altitude_start = req.body.dest_altitude_start
-    ? req.body.dest_altitude_start
-    : 0;
-  const origin_altitude_end = req.body.origin_altitude_end
-    ? req.body.origin_altitude_end
-    : 1000000;
-  const dest_altitude_start = req.body.dest_altitude_start
-    ? req.body.dest_altitude_start
-    : 0;
-  const dest_altitude_end = req.body.dest_altitude_end
-    ? req.body.dest_altitude_end
-    : 1000000;
-  const airline_name = req.body.airline_name;
 
-  const password = req.body.password;
+  console.log(origin_country);
+  // const origin_altitude_start = req.body.dest_altitude_start
+  //   ? req.body.dest_altitude_start
+  //   : 0;
+  // const origin_altitude_end = req.body.origin_altitude_end
+  //   ? req.body.origin_altitude_end
+  //   : 1000000;
+  // const dest_altitude_start = req.body.dest_altitude_start
+  //   ? req.body.dest_altitude_start
+  //   : 0;
+  // const dest_altitude_end = req.body.dest_altitude_end
+  //   ? req.body.dest_altitude_end
+  //   : 1000000;
+  const airline_name = req.body.airline_name;
 
   db.query(
     "SELECT " +
@@ -38,26 +38,18 @@ router.post("/getFilterRoutes", (req, res) => {
       origin_city +
       "' AND country LIKE '%" +
       origin_country +
-      "' AND altitude >= " +
-      origin_altitude_start +
-      " AND altitude <= " +
-      origin_altitude_end +
-      ") as origin ON r.originAirportUID = origin.airportUID " +
+      "') as origin ON r.originAirportUID = origin.airportUID " +
       "INNER JOIN  (SELECT * from omniflight.airports WHERE city LIKE '%" +
       dest_city +
       "' AND country LIKE '%" +
       dest_country +
-      "' AND altitude >= " +
-      dest_altitude_start +
-      " AND altitude <= " +
-      dest_altitude_end +
-      ") as dest ON r.destAirportUID = dest.airportUID " +
+      "') as dest ON r.destAirportUID = dest.airportUID " +
       "INNER JOIN (SELECT * from omniflight.airlines WHERE name LIKE '%" +
       airline_name +
-      "%') as airline ON r.airlineUID = airline.airlineUID LIMIT 500;",
+      "%') as airline ON r.airlineUID = airline.airlineUID LIMIT 100;",
     (err, result) => {
       console.log(err);
-      res.send({ result });
+      res.send(result);
     }
   );
 });

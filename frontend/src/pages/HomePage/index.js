@@ -1,15 +1,23 @@
 import { Col, Layout, Typography, Menu, Drawer, Space, Button } from "antd";
 import "./HomePage.scss";
 import { SearchOutlined, StarFilled, CloseOutlined } from "@ant-design/icons";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoAirplaneOutline } from "react-icons/fa";
 import Map from "../../components/Map";
 import SearchPanel from "../../components/SearchPanel";
 import FavoritesPanel from "../../components/FavoritesPanel";
+import { useDispatch, useSelector } from "react-redux";
+import { getFilteredRoutes, onViewFavorites } from "../../api";
+import {
+  setFavoriteRoutes,
+  setFilteredRoutes,
+} from "../../state/reducers/routesReducer";
 const { Content, Sider } = Layout;
 const { Title, Text, Link } = Typography;
 
 const HomePage = () => {
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.user);
   const items = [
     getItem("0", <SearchOutlined style={{ fontSize: "25px" }} />, "Search"),
     getItem("1", <StarFilled style={{ fontSize: "25px" }} />, "Favorites"),
@@ -36,6 +44,31 @@ const HomePage = () => {
     setOpen(true);
   };
 
+  useEffect(() => {
+    const fetchRoutes = async () => {
+      let routes = await getFilteredRoutes({
+        origin_city: "Toronto",
+        origin_country: "",
+        dest_city: "",
+        dest_country: "",
+        airline_name: "",
+      });
+      dispatch(setFilteredRoutes({ filteredRoutes: routes.data }));
+    };
+
+    const fetchFavorites = async () => {
+      let res = await onViewFavorites({ userid: user.userid });
+      if (res) {
+        dispatch(setFavoriteRoutes({ favoriteRoutes: res.data }));
+      } else {
+        console.log("There was an error getting the favorites!");
+      }
+    };
+    fetchFavorites();
+    fetchRoutes();
+  }, []);
+
+  useEffect(() => {}, []);
   const handleMenuClick = (item) => {
     setSelectedPanel(panels[item.key]);
     setOpen(true);

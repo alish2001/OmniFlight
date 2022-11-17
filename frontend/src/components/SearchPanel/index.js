@@ -13,6 +13,7 @@ import {
   Popconfirm,
   Popover,
   Select,
+  Pagination,
 } from "antd";
 import {
   SearchOutlined,
@@ -21,7 +22,7 @@ import {
   FilterOutlined,
 } from "@ant-design/icons";
 import { TbPlaneArrival } from "react-icons/tb";
-
+import { useSelector } from "react-redux";
 import "./SearchPanel.scss";
 import React, { useState } from "react";
 import RouteCard from "../RouteCard";
@@ -29,6 +30,8 @@ const { Content, Sider } = Layout;
 const { Title, Text, Link } = Typography;
 
 const SearchPanel = () => {
+  const routes = useSelector((state) => state.routes.filteredRoutes);
+  const favRoutes = useSelector((state) => state.routes.favoriteRoutes);
   return (
     <Col className="searchpanel_container">
       <Row justify="space-between">
@@ -125,19 +128,25 @@ const SearchPanel = () => {
         </Popover>
       </Row>
       <Divider />
-
-      <RouteCard
-        routeData={{
-          routeUID: 3,
-          origin: "Toronto",
-          origin_iata: "YYZ",
-          destination: "Random",
-          destination_iata: "FFK",
-          airplane_type: "Boeing 777",
-          airline: "Emirates",
-        }}
-        isFavorite={false}
-      />
+      {routes &&
+        routes.map((route) => {
+          return (
+            <RouteCard
+              key={route.routeUID}
+              routeData={{
+                routeUID: route.routeUID,
+                origin: route.origin_city,
+                origin_iata: route.origin_iata,
+                destination: route.dest_city,
+                destination_iata: route.dest_iata,
+                airline: route.airline_name,
+              }}
+              isFavorite={favRoutes.some(
+                (favRoute) => favRoute.routeUID === route.routeUID
+              )}
+            />
+          );
+        })}
     </Col>
   );
 };
