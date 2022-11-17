@@ -128,6 +128,7 @@ const SearchPanel = () => {
 
       <RouteCard
         routeData={{
+          routeUID: 3,
           origin: "Toronto",
           origin_iata: "YYZ",
           destination: "Random",
@@ -135,7 +136,7 @@ const SearchPanel = () => {
           airplane_type: "Boeing 777",
           airline: "Emirates",
         }}
-        isFavorite={true}
+        isFavorite={false}
       />
     </Col>
   );

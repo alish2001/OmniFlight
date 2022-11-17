@@ -44,21 +44,21 @@ router.post("/login", (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
-  db.query("SELECT * FROM users WHERE email = ?;", email, (err, result) => {
+  db.query("SELECT * FROM users WHERE email = ?", email, (err, result) => {
     if (err) {
-      res.send({ err: err });
+      return res.send({ err: err });
     }
 
-    if (result.length > 0) {
+    if (result && result.length > 0) {
       bcrypt.compare(password, result[0].password, (error, response) => {
         if (response) {
-          res.json(result[0]);
+          return res.json(result[0]);
         } else {
-          res.status(401).send({ err: "Incorrect Email/Password!" });
+          return res.status(401).send({ err: "Incorrect Email/Password!" });
         }
       });
     } else {
-      res.status(401).send({ message: "User doesn't exist!" });
+      return res.status(401).send({ message: "User doesn't exist!" });
     }
   });
 });
