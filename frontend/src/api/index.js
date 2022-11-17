@@ -27,3 +27,17 @@ export const onRegister = async (values) => {
     return false;
   }
 };
+
+export const getFilteredRoutes = async (filters) => {
+  const body = { ...filters };
+  try {
+    const response = await Axios.post(
+      "http://localhost:9000/routes/getFilterRoutes/",
+      body
+    );
+    console.log(response);
+    return response;
+  } catch (err) {
+    return false;
+  }
+};
