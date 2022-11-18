@@ -16,5 +16,5 @@ docker-compose up --build
 
 The app should now be available on `localhost:3000`
 
-# Implemented Features
-The following 3 features have been implemented and tested: favorites, plane routes, and users login/registration. The implementations can be found in the corresponding files in the [feature implementation directory](/backend/routes).
+# Implemented features
+The following 3 features have been implemented and tested: favorites, plane routes, and users login/registration. The implementations can be found as backend api routes powered by `express.js` in the [routes directory of our backend](/backend/routes).
