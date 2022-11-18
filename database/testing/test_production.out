@@ -1,182 +1,689 @@
-1,'contact@alish.se','Ali','Shariatmadari','password'
+-- R6 Test user registration/login
+# userid, email, first_name, last_name, password
+'1', 'contact@alish.se', 'Ali', 'Shariatmadari', 'password'
 
+No result
 
-2, "crawling@uwaterloo.ca", "Connor", "Rawlings", "mypass"
+# userid, email, first_name, last_name, password
+'2', 'crawling@uwaterloo.ca', 'Connor', 'Rawlings', 'mypass'
 
-2354,154,146,,0
-24,2170,146,Y,0
-24,3876,146,Y,0
-24,3520,146,Y,0
-24,3670,146,,0
-24,3645,146,Y,0
-24,3797,146,Y,0
-24,3697,146,Y,0
-24,507,146,Y,0
-24,3576,146,,0
-24,3830,146,Y,0
-24,3752,146,Y,0
-330,5810,146,,0
-330,3825,146,Y,0
-330,3448,146,Y,0
-330,302,146,,0
-330,1382,146,,0
-330,1852,146,,0
-330,1800,146,,0
-330,3520,146,Y,0
-330,3751,146,,0
-330,3494,146,Y,0
-330,2878,146,,0
-330,3533,146,,0
-330,340,146,,0
-330,1665,146,,0
-330,1910,146,,0
-330,3714,146,Y,0
-330,3550,146,Y,0
-330,3877,146,,0
-330,3484,146,,0
-330,3697,146,,0
-330,507,146,,0
-330,1780,146,,0
-330,3878,146,,0
-330,346,146,Y,0
-330,3830,146,,0
-330,1897,146,,0
-330,1754,146,,0
-330,2881,146,,0
-330,1760,146,,0
-330,3469,146,,0
-330,1918,146,,0
-330,1590,146,,0
-330,1923,146,,0
-330,27,146,Y,0
-330,28,146,Y,0
-330,49,146,,0
-330,56,146,Y,0
-330,73,146,,0
-330,100,146,,0
-330,111,146,Y,0
-330,117,146,Y,0
-330,135,146,Y,0
-330,144,146,Y,0
-330,149,146,Y,0
-330,153,146,Y,0
-330,156,146,,0
-330,160,146,Y,0
-330,178,146,,0
-330,182,146,Y,0
-330,189,146,,0
-330,192,146,Y,0
-330,193,146,,0
-330,202,146,Y,0
-330,5538,146,Y,0
-330,1678,146,,0
-137,3682,146,Y,0
-137,1382,146,,0
-794,210,146,,0
-321,3682,146,Y,0
-321,1824,146,,0
-4248,1074,146,,0
-2350,3797,146,Y,0
-2350,507,146,Y,0
-596,1382,146,Y,0
-596,3797,146,Y,0
-1355,507,146,,0
-1936,1904,146,,0
-1936,1910,146,,0
-1936,1905,146,,0
-1936,1918,146,,0
-1936,1923,146,,0
-2009,580,146,Y,0
-2009,3682,146,Y,0
-2009,1382,146,Y,0
-2009,3645,146,Y,0
-2009,3797,146,,0
-2009,3697,146,Y,0
-2009,3858,146,Y,0
-2222,3830,146,Y,0
-2822,507,146,Y,0
-3090,580,146,,0
-3090,160,146,Y,0
-3090,193,146,Y,0
-3320,302,146,Y,0
-3320,1382,146,Y,0
-3320,340,146,Y,0
-3320,1665,146,Y,0
-3320,507,146,Y,0
-3320,346,146,,0
-3320,193,146,Y,0
-4559,1665,146,Y,0
-4559,193,146,Y,0
-4559,1678,146,,0
-4021,73,146,,0
-4021,144,146,,0
-477,1441,146,,0
-4091,11051,146,,0
-4259,2170,146,,0
-4259,3645,146,,0
-1531,302,146,Y,0
-1908,1386,146,,0
-1317,1230,146,,0
-1317,3941,146,,0
-1317,5810,146,Y,0
-1317,1218,146,,0
-1317,1264,146,,0
-1317,302,146,,0
-1317,1901,146,Y,0
-1317,1382,146,,0
-1317,1852,146,,0
-1317,1555,146,,0
-1317,3533,146,Y,0
-1317,1910,146,,0
-1317,502,146,,0
-1317,1638,146,,0
-1317,1335,146,,0
-1317,1780,146,Y,0
-1317,3878,146,,0
-1317,1353,146,,0
-1317,1354,146,,0
-1317,1760,146,,0
-1317,1836,146,Y,0
-1317,1918,146,Y,0
-1317,1273,146,,0
-1317,1551,146,,0
-1317,1923,146,,0
-1317,111,146,,0
-1317,193,146,,0
-5209,3825,146,Y,0
-5209,3448,146,Y,0
-5209,3751,146,Y,0
-5209,3494,146,Y,0
-5209,1665,146,Y,0
-5209,3714,146,Y,0
-5209,3550,146,Y,0
-5209,3484,146,Y,0
-5209,3697,146,Y,0
-5209,3830,146,Y,0
-5209,3469,146,Y,0
-5209,193,146,Y,0
-5265,2170,146,,0
-5265,3876,146,Y,0
-5265,3520,146,Y,0
-5265,3670,146,,0
-5265,3645,146,,0
-5265,3797,146,,0
-5265,3697,146,,0
-5265,3576,146,,0
-5265,3830,146,,0
-5265,3752,146,Y,0
-5416,1852,146,,0
-5416,3670,146,Y,0
-5416,3533,146,,0
-5416,3797,146,,0
-5416,3877,146,,0
-5416,3697,146,Y,0
-5416,3576,146,Y,0
-5416,3858,146,Y,0
-5416,3830,146,Y,0
-5416,1760,146,,0
-5416,49,146,,0
-5416,156,146,,0
-5416,160,146,,0
-5416,178,146,,0
-5416,193,146,,0
+-- R8 Test getting routes by origin and destination cities
+# routeUID, origin_city, origin_iata, origin_lat, origin_long, origin_name, dest_city, dest_country, dest_iata, dest_lat, dest_long, dest_name, airline_name
+'44562', 'Toronto', 'YYZ', '43.677200317400000000', '-79.630599975599990000', 'Lester B. Pearson International Airport', 'Karachi', 'Pakistan', 'KHI', '24.906500000000000000', '67.160797000000000000', 'Jinnah International Airport', 'Pakistan International Airlines'
+
+-- R7 Test Adding a route to favorites
+# routeUID, airline, origin, destination, origin_iata, destination_iata
+'44562', 'Pakistan International Airlines', 'Canada', 'Pakistan', 'YYZ', 'KHI'
+
+-- R10 Test viewing most favorited routes
+# routeUID, airlineUID, originAirportUID, destAirportUID, codeshare, stops, popularity
+'44562', '3871', '193', '2206', '', '0', '2'
+
+-- R7 Test deleting a route from favorites
+# routeUID, airlineUID, originAirportUID, destAirportUID, codeshare, stops, popularity
+No result
+
+-- R9 Test filtering routes by origin and destination countries, airlines, and airplane types
+# routeUID, origin_city, origin_iata, origin_lat, origin_long, origin_name, dest_city, dest_country, dest_iata, dest_lat, dest_long, dest_name, airline_name, airplane_name
+'44561', 'Toronto', 'YYZ', '43.677200317400000000', '-79.630599975599990000', 'Lester B. Pearson International Airport', 'Islamabad', 'Pakistan', '\\N', '33.616699000000000000', '73.099197000000000000', 'Benazir Bhutto International Airport', 'Pakistan International Airlines', 'Boeing 777\r'
+'44562', 'Toronto', 'YYZ', '43.677200317400000000', '-79.630599975599990000', 'Lester B. Pearson International Airport', 'Karachi', 'Pakistan', 'KHI', '24.906500000000000000', '67.160797000000000000', 'Jinnah International Airport', 'Pakistan International Airlines', 'Boeing 777\r'
+'44563', 'Toronto', 'YYZ', '43.677200317400000000', '-79.630599975599990000', 'Lester B. Pearson International Airport', 'Lahore', 'Pakistan', 'LHE', '31.521600723266600000', '74.403602600097660000', 'Alama Iqbal International Airport', 'Pakistan International Airlines', 'Boeing 777\r'
+
+-- R11 Test viewing most popular airplanes
+# planeUID, name, planeCount
+'16', 'Airbus A320\r', '15422'
+'75', 'Boeing 737-800\r', '13399'
+'14', 'Airbus A319\r', '7824'
+'74', 'Boeing 737-700\r', '3989'
+'18', 'Airbus A321\r', '3765'
+'64', 'Boeing 737\r', '2800'
+'117', 'Canadair Regional Jet 100\r', '2222'
+'169', 'Embraer 190\r', '1968'
+'22', 'Airbus A330-300\r', '1585'
+'70', 'Boeing 737-300\r', '1552'
+'8', 'Aerospatiale/Alenia ATR 72\r', '1514'
+'21', 'Airbus A330-200\r', '1442'
+'150', 'De Havilland Canada DHC-8-400 Dash 8Q\r', '1387'
+'92', 'Boeing 767-300\r', '1366'
+'179', 'Embraer RJ140\r', '1358'
+'120', 'Canadair Regional Jet 700\r', '1161'
+'87', 'Boeing 757\r', '1069'
+'121', 'Canadair Regional Jet 900\r', '1049'
+'165', 'Embraer 170\r', '1037'
+'180', 'Embraer RJ145\r', '989'
+'76', 'Boeing 737-900\r', '971'
+'94', 'Boeing 777\r', '946'
+'98', 'Boeing 777-300ER\r', '908'
+'20', 'Airbus A330\r', '903'
+'88', 'Boeing 757-200\r', '891'
+'217', 'McDonnell Douglas MD-88\r', '725'
+'166', 'Embraer 175\r', '701'
+'146', 'De Havilland Canada DHC-8 Dash 8\r', '700'
+'72', 'Boeing 737-500\r', '693'
+'212', 'McDonnell Douglas MD-80\r', '656'
+'82', 'Boeing 747-400\r', '653'
+'13', 'Airbus A318\r', '642'
+'95', 'Boeing 777-200\r', '633'
+'7', 'Aerospatiale/Alenia ATR 42-600\r', '618'
+'59', 'Boeing 717\r', '614'
+'184', 'Fokker 100\r', '590'
+'27', 'Airbus A340-300\r', '490'
+'134', 'Cessna Light Aircraft\r', '487'
+'71', 'Boeing 737-400\r', '482'
+'149', 'De Havilland Canada DHC-8-300 Dash 8\r', '474'
+'231', 'Saab SF340A/B\r', '470'
+'90', 'Boeing 767\r', '463'
+'170', 'Embraer 195\r', '457'
+'218', 'McDonnell Douglas MD-90\r', '416'
+'55', 'Beechcraft 1900\r', '414'
+'97', 'Boeing 777-300\r', '370'
+'73', 'Boeing 737-600\r', '364'
+'119', 'Canadair Regional Jet 200\r', '342'
+'215', 'McDonnell Douglas MD-83\r', '339'
+'144', 'De Havilland Canada DHC-6 Twin Otter\r', '309'
+'12', 'Airbus A310\r', '307'
+'103', 'Boeing 787-8\r', '287'
+'147', 'De Havilland Canada DHC-8-100 Dash 8 / 8Q\r', '264'
+'6', 'Aerospatiale/Alenia ATR 42-500\r', '256'
+'5', 'Aerospatiale/Alenia ATR 42-300\r', '255'
+'29', 'Airbus A340-600\r', '222'
+'34', 'Airbus A380-800\r', '214'
+'148', 'De Havilland Canada DHC-8-200 Dash 8 / 8Q\r', '187'
+'174', 'Embraer EMB 120 Brasilia\r', '187'
+'186', 'Fokker 70\r', '175'
+'47', 'Avro RJ100\r', '162'
+'118', 'Canadair Regional Jet 1000\r', '159'
+'93', 'Boeing 767-400\r', '153'
+'89', 'Boeing 757-300\r', '151'
+'96', 'Boeing 777-200LR\r', '151'
+'214', 'McDonnell Douglas MD-82\r', '146'
+'185', 'Fokker 50\r', '132'
+'230', 'Saab 2000\r', '113'
+'101', 'Boeing 787\r', '106'
+'49', 'Avro RJ85\r', '105'
+'10', 'Airbus A300-600\r', '102'
+'25', 'Airbus A340\r', '96'
+'77', 'Boeing 747\r', '85'
+'178', 'Embraer RJ135\r', '83'
+'114', 'British Aerospace Jetstream 41\r', '68'
+'41', 'Antonov AN-24\r', '62'
+'224', 'Pilatus Britten-Norman BN-2A/B Islander\r', '61'
+'206', 'LET 410\r', '60'
+'240', 'Sukhoi Superjet 100-95\r', '60'
+'69', 'Boeing 737-200\r', '53'
+'112', 'British Aerospace Jetstream 31\r', '49'
+'28', 'Airbus A340-500\r', '47'
+'91', 'Boeing 767-200\r', '46'
+'181', 'Fairchild Dornier 328JET\r', '45'
+'183', 'Fairchild Dornier Do.328\r', '45'
+'111', 'British Aerospace ATP\r', '41'
+'196', 'Harbin Yunshuji Y12\r', '38'
+'173', 'Embraer EMB 110 Bandeirante\r', '37'
+'229', 'Piper PA-46\r', '31'
+'113', 'British Aerospace Jetstream 32\r', '30'
+'26', 'Airbus A340-200\r', '28'
+'33', 'Airbus A380\r', '28'
+'51', 'BAe 146\r', '27'
+'56', 'Beechcraft Baron\r', '26'
+'220', 'Xian Yunshuji Y7\r', '26'
+'245', 'Yakovlev Yak-42\r', '26'
+'9', 'Airbus A300\r', '24'
+'38', 'Antonov An-148\r', '24'
+'54', 'BAe 146-300\r', '22'
+'84', 'Boeing 747-8\r', '22'
+'243', 'Tupolev Tu-204\r', '18'
+'159', 'Douglas DC-9\r', '17'
+'39', 'Antonov An-158\r', '16'
+'57', 'Bell 212\r', '16'
+'225', 'Pilatus PC-12\r', '16'
+'37', 'Antonov AN-140\r', '14'
+'162', 'Douglas DC-9-30\r', '14'
+'216', 'McDonnell Douglas MD-87\r', '14'
+'228', 'Piper PA-31 Navajo\r', '14'
+'241', 'Tupolev Tu-134\r', '13'
+'198', 'Ilyushin IL114\r', '12'
+'223', 'Pilatus Britten-Norman BN-2A Mk III Trislander\r', '12'
+'242', 'Tupolev Tu-154\r', '12'
+'145', 'De Havilland Canada DHC-7 Dash 7\r', '11'
+'53', 'BAe 146-200\r', '10'
+'211', 'McDonnell Douglas MD-11\r', '10'
+'203', 'Ilyushin IL96\r', '9'
+'50', 'Comac ARJ21\r', '8'
+'125', 'Cessna 210 Centurion\r', '8'
+'153', 'Douglas DC-10\r', '8'
+'182', 'Fairchild Dornier Do.228\r', '8'
+'188', 'Fokker F28 Fellowship\r', '7'
+'85', 'Boeing 747SP\r', '6'
+'140', 'De Havilland Canada DHC-2 Beaver\r', '6'
+'235', 'Shorts SD.360\r', '6'
+'52', 'BAe 146-100\r', '4'
+'133', 'Cessna Citation X\r', '4'
+'219', 'Xian MA60\r', '4'
+'244', 'Yakovlev Yak-40\r', '4'
+'1', 'Aerospatiale AS350 / AS355\r', '2'
+'227', 'Piper Light Air Craft\r', '2'
+'238', 'Sikorsky S-76\r', '2'
+
+-- R11 Test viewing most popular airlines
+# airlineUID, name, airlineCount
+'4296', 'Ryanair', '2484'
+'24', 'American Airlines', '2352'
+'5209', 'United Airlines', '2178'
+'2009', 'Delta Air Lines', '1981'
+'5265', 'US Airways', '1960'
+'1767', 'China Southern Airlines', '1446'
+'1758', 'China Eastern Airlines', '1251'
+'751', 'Air China', '1244'
+'4547', 'Southwest Airlines', '1146'
+'2297', 'easyJet', '1130'
+'137', 'Air France', '1069'
+'3320', 'Lufthansa', '923'
+'596', 'Alitalia', '877'
+'2822', 'Iberia Airlines', '831'
+'3090', 'KLM Royal Dutch Airlines', '830'
+'214', 'Air Berlin', '798'
+'4611', 'Shenzhen Airlines', '797'
+'1316', 'AirTran Airways', '726'
+'330', 'Air Canada', '705'
+'4951', 'Turkish Airlines', '650'
+'3737', 'Norwegian Air Shuttle', '576'
+'2660', 'Hainan Airlines', '553'
+'1355', 'British Airways', '547'
+'324', 'All Nippon Airways', '541'
+'439', 'Alaska Airlines', '530'
+'4319', 'Scandinavian Airlines System', '504'
+'8745', 'Transavia France', '488'
+'130', 'Aeroflot Russian Airlines', '473'
+'2548', 'Germanwings', '470'
+'5461', 'Wizz Air', '453'
+'321', 'AeroMéxico', '431'
+'4089', 'Qantas', '430'
+'3029', 'JetBlue Airways', '399'
+'13983', 'Azul', '393'
+'4608', 'Sichuan Airlines', '388'
+'2987', 'Japan Airlines', '386'
+'5484', 'Xiamen Airlines', '386'
+'2439', 'Formosa Airlines', '384'
+'35', 'Allegiant Air', '378'
+'4533', 'Saudi Arabian Airlines', '374'
+'218', 'Air India Limited', '367'
+'690', 'Air Foyle', '358'
+'5416', 'WestJet', '341'
+'1868', 'Condor Flugdienst', '334'
+'1790', 'City Connexion Airlines', '332'
+'4867', 'TAM Brazilian Airlines', '332'
+'2220', 'Ethiopian Airlines', '331'
+'3378', 'Malaysia Airlines', '330'
+'2350', 'Finnair', '328'
+'4599', 'Shandong Airlines', '314'
+'3026', 'Jet2.com', '302'
+'5067', 'Transaero Airlines', '300'
+'3163', 'Korean Air', '292'
+'4559', 'Swiss International Air Lines', '290'
+'5360', 'Virgin Australia', '290'
+'2183', 'Emirates', '287'
+'515', 'Avianca - Aerovias Nacionales de Colombia', '286'
+'3200', 'LAN Airlines', '285'
+'4329', 'S7 Airlines', '281'
+'3000', 'Jet Airways', '276'
+'4091', 'Qatar Airways', '276'
+'2421', 'Flybe', '268'
+'28', 'Asiana Airlines', '260'
+'2520', 'Garuda Indonesia', '248'
+'3290', 'Lion Mentari Airlines', '243'
+'3871', 'Pakistan International Airlines', '242'
+'3926', 'Pegasus Airlines', '242'
+'4687', 'Spirit Airlines', '242'
+'491', 'Austrian Airlines', '240'
+'4248', 'Royal Air Maroc', '238'
+'345', 'Air New Zealand', '233'
+'5039', 'Transavia Holland', '233'
+'5234', 'Ural Airlines', '232'
+'4869', 'TAP Portugal', '229'
+'794', 'Air Algerie', '226'
+'837', 'Aer Lingus', '226'
+'2222', 'Etihad Airways', '226'
+'2681', 'TUIfly', '226'
+'96', 'Aegean Airlines', '222'
+'2468', 'Frontier Airlines', '220'
+'6557', 'Japan Air System', '214'
+'1680', 'Cathay Pacific', '211'
+'220', 'Air Bourbon', '210'
+'4435', 'Singapore Airlines', '210'
+'5309', 'Vietnam Airlines', '209'
+'2143', 'Egyptair', '205'
+'5439', 'Widerøe', '205'
+'4305', 'South African Airways', '202'
+'2850', 'IndiGo Airlines', '199'
+'5325', 'Volaris', '197'
+'5347', 'Virgin Atlantic Airways', '195'
+'4940', 'Thai Airways International', '191'
+'1531', 'Brussels Airlines', '190'
+'4609', 'Shanghai Airlines', '189'
+'1683', 'Cebu Pacific', '184'
+'1889', 'Copa Airlines', '184'
+'2922', 'Iran Air', '182'
+'576', 'AirAsia', '180'
+'16726', 'Era Alaska', '178'
+'3463', 'Meridiana', '173'
+'1756', 'China Airlines', '170'
+'2923', 'Iran Aseman Airlines', '169'
+'241', 'Air Sahara', '168'
+'3052', 'Jetstar Airways', '163'
+'4375', 'Spicejet', '162'
+'90', 'Air Europa', '158'
+'15999', 'China SSS', '155'
+'412', 'Aerolineas Argentinas', '154'
+'5281', 'Uzbekistan Airways', '151'
+'4870', 'Tunisair', '149'
+'1203', 'Airlinair', '148'
+'14485', 'Fly Dubai', '146'
+'3081', 'Juneyao Airlines', '145'
+'3952', 'Philippine Airlines', '144'
+'3126', 'Kenya Airways', '142'
+'5013', 'Thomsonfly', '139'
+'1317', 'Air Transat', '138'
+'20577', 'VOLOTEA Airways', '136'
+'2942', 'Cargo Plus Aviation', '130'
+'329', 'Air Arabia', '128'
+'5282', 'Ukraine International Airlines', '127'
+'4897', 'Thomas Cook Airlines', '125'
+'3210', 'LOT Polish Airlines', '120'
+'1006', 'Air Astana', '118'
+'2091', 'EVA Air', '118'
+'4259', 'Royal Jordanian', '118'
+'333', 'Air Baltic', '112'
+'1925', 'Croatia Airlines', '112'
+'17885', 'Interjet (ABC Aerolineas)', '112'
+'1946', 'Czech Airlines', '111'
+'3661', 'Niki', '111'
+'3329', 'Luxair', '110'
+'3754', 'Nas Air', '110'
+'3776', 'Olympic Airlines', '110'
+'4026', 'Potomac Air', '106'
+'4454', 'Sriwijaya Air', '106'
+'3764', 'Oceanair', '104'
+'4573', 'SunExpress', '99'
+'10741', 'China United', '98'
+'2056', 'Dragonair', '96'
+'2547', 'Germania', '96'
+'3778', 'Oman Air', '96'
+'5496', 'Yemenia', '96'
+'692', 'Air Tahiti', '93'
+'524', 'Air Vanuatu', '92'
+'4947', 'Thai AirAsia', '92'
+'5038', 'TransAsia Airways', '92'
+'5179', 'Tarom', '92'
+'328', 'Air Niugini', '91'
+'4750', 'SilkAir', '91'
+'12978', 'West Air China', '90'
+'15837', 'Huaxia', '90'
+'4349', 'SriLankan Airlines', '89'
+'240', 'Air One', '88'
+'4178', 'Regional Express', '88'
+'1629', 'Cape Air', '86'
+'242', 'Air Malta', '84'
+'1478', 'Belavia Belarusian Airlines', '82'
+'4304', 'SATA International', '81'
+'3179', 'Kuwait Airways', '79'
+'1886', 'Conviasa', '78'
+'4840', 'Scat Air', '78'
+'2575', 'Go Air', '77'
+'2638', 'Gulf Air Bahrain', '77'
+'19582', 'Air Serbia', '77'
+'569', 'Air India Express', '76'
+'2193', 'Empresa Ecuatoriana De Aviacion', '76'
+'1066', 'Air Madagascar', '75'
+'1422', 'Bangkok Airways', '75'
+'2354', 'First Air', '74'
+'2688', 'Hawaiian Airlines', '74'
+'4936', 'Tiger Airways', '74'
+'13088', 'NordStar Airlines', '74'
+'15814', 'UTair-Express', '74'
+'1287', 'Aircompany Yakutia', '73'
+'1308', 'Airlines PNG', '73'
+'2150', 'El Al Israel Airlines', '73'
+'5133', 'TAAG Angola Airlines', '71'
+'20976', 'World Scale Airlines', '70'
+'4691', 'SATENA', '68'
+'5097', 'Travel Service', '67'
+'20710', 'Silver Airways (3M)', '67'
+'879', 'Air Pacific', '66'
+'5331', 'Virgin America', '66'
+'1472', 'Bering Air', '65'
+'1623', 'Canadian North', '65'
+'3490', 'Middle East Airlines', '65'
+'21', 'Aigle Azur', '64'
+'1663', 'Caribbean Airlines', '64'
+'4311', 'Shaheen Air International', '64'
+'2857', 'Indonesia AirAsia', '62'
+'3251', 'Leeward Islands Air Transport', '62'
+'3258', 'Libyan Arab Airlines', '62'
+'9828', 'Ciel Canadien', '62'
+'16136', 'Caucasus Airlines', '62'
+'18553', 'Maastricht Airlines', '62'
+'1936', 'Cubana de Aviación', '59'
+'753', 'Aero Condor Peru', '58'
+'1403', 'Bahamasair', '58'
+'4740', 'Skymark Airlines', '58'
+'19305', 'Citilink Indonesia', '58'
+'316', 'Air Macau', '56'
+'921', 'Air Greenland', '56'
+'1548', 'Bulgaria Air', '56'
+'3392', 'Mandarin Airlines', '56'
+'197', 'Azerbaijan Airlines', '54'
+'4797', 'Solomon Airlines', '54'
+'9541', 'Air Mozambique', '54'
+'2607', 'Great Lakes Airlines', '53'
+'2835', 'Icelandair', '53'
+'502', 'Abu Dhabi Amiri Flight', '52'
+'3342', 'L', '52'
+'9082', 'Uni Air', '50'
+'13704', 'KSY', '50'
+'1463', 'Blue Panorama Airlines', '49'
+'2773', 'Hong Kong Airlines', '49'
+'4737', 'Sky Airline', '49'
+'10122', 'Salzburg arrows', '48'
+'1359', 'Biman Bangladesh Airlines', '46'
+'1539', 'Binter Canarias', '46'
+'3233', 'Lao Airlines', '46'
+'3674', 'Nok Air', '46'
+'3976', 'Pinnacle Airlines', '46'
+'4863', 'TAME', '46'
+'18732', 'Malindo Air', '46'
+'18944', 'Insel Air (7I/INC) (Priv)', '45'
+'543', 'Air Bangladesh', '44'
+'9818', 'Air Arabia Maroc', '44'
+'1057', 'Air Mauritius', '43'
+'1290', 'Aeromar', '42'
+'1909', 'Corse-Mediterranee', '42'
+'4937', 'Tiger Airways Australia', '42'
+'5333', 'Virgin Express', '42'
+'13757', 'Wizz Air Ukraine', '42'
+'3652', 'NextJet', '41'
+'16508', 'Baikotovitchestrian Airlines ', '41'
+'83', 'Adria Airways', '40'
+'410', 'Aerocondor', '40'
+'2353', 'Firefly', '40'
+'4292', 'Rwandair Express', '40'
+'1434', 'Bearskin Lake Air Service', '39'
+'10765', 'SeaPort Airlines', '39'
+'1073', 'Air Moldova', '38'
+'2420', 'Flybaboo', '38'
+'4356', 'Sun Country Airlines', '38'
+'5041', 'TACV', '38'
+'32', 'Afriqiyah Airways', '36'
+'2245', 'Eurolot', '36'
+'2417', 'AirAsia X', '36'
+'3021', 'Jetstar Asia Airways', '36'
+'3386', 'Malmö Aviation', '36'
+'3788', 'Onur Air', '36'
+'153', 'Air Namibia', '35'
+'3740', 'Nouvel Air Tunisie', '35'
+'5188', 'TRIP Linhas A', '35'
+'312', 'Air Sicilia', '34'
+'476', 'Airlines Of Tasmania', '34'
+'603', 'Amaszonas', '34'
+'882', 'Air Florida', '34'
+'897', 'Air Philippines', '34'
+'1943', 'Cyprus Turkish Airlines', '34'
+'4021', 'Porter Airlines', '34'
+'4521', 'Sudan Airways', '34'
+'5651', 'Royal Air Cambodge', '34'
+'9531', 'Tajik Air', '34'
+'338', 'Airnorth', '33'
+'2994', 'Jeju Air', '33'
+'995', 'Atlasjet', '32'
+'2117', 'Eastern Airways', '32'
+'2826', 'Ibex Airlines', '32'
+'4335', 'Seaborne Airlines', '32'
+'5479', 'XL Airways France', '32'
+'8463', 'United Airways', '32'
+'9764', 'Zest Air', '32'
+'11811', 'AlMasria Universal Airlines', '32'
+'17094', 'Senegal Airlines', '32'
+'17675', 'Peach Aviation', '32'
+'1942', 'Cyprus Airways', '31'
+'4031', 'Precision Air', '31'
+'20004', 'Volotea Costa Rica', '31'
+'595', 'Atlant-Soyuz Airlines', '30'
+'1340', 'Alrosa Mirny Air Enterprise', '30'
+'1792', 'CityJet', '30'
+'1908', 'Corsairfly', '30'
+'2993', 'Jazeera Airways', '30'
+'3856', 'Pacific Coastal Airline', '30'
+'4255', 'Royal Brunei Airlines', '30'
+'16725', 'Marusya Airways', '30'
+'16942', 'Mauritania Airlines International', '30'
+'970', 'Air Bagan', '29'
+'1581', 'CAL Cargo Air Lines', '29'
+'55', 'Astral Aviation', '28'
+'462', 'Astrakhan Airlines', '28'
+'567', 'Air Caraïbes', '28'
+'3935', 'Peninsula Airways', '28'
+'4429', 'SATA Air Acores', '28'
+'5982', 'Air Busan', '28'
+'13108', 'Maldivian', '28'
+'14118', 'Genesis', '28'
+'14849', 'Aereonautica militare', '28'
+'386', 'Aero Flight', '26'
+'622', 'Aserca Airlines', '26'
+'2218', 'Estonian Air', '26'
+'2395', 'Flightline', '26'
+'2765', 'Hokkaido International Airlines', '26'
+'2916', 'Intersky', '26'
+'3539', 'Montenegro Airlines', '26'
+'5399', 'WebJet Linhas A', '26'
+'9810', 'Jin Air', '26'
+'2682', 'Hapagfly', '25'
+'16149', 'Windward Islands Airways', '25'
+'16415', 'Camair-co', '25'
+'683', 'Air Botswana', '24'
+'1191', 'Air Austral', '24'
+'1299', 'Arkefly', '24'
+'3197', 'LACSA', '24'
+'3370', 'Mahan Air', '24'
+'5085', 'Tuninter', '24'
+'11741', 'Air Antilles Express', '24'
+'17891', 'Scoot', '24'
+'18543', 'SkyWork Airlines ', '24'
+'1682', 'Cayman Airways', '23'
+'2825', 'Iberworld', '23'
+'125', 'Ariana Afghan Airlines', '22'
+'139', 'Air Caledonie International', '22'
+'470', 'Air Burkina', '22'
+'503', 'Aeroflot-Nord', '22'
+'1844', 'Comores Airlines', '22'
+'2990', 'Japan Transocean Air', '22'
+'4475', 'South East Asian Airlines', '22'
+'4965', 'Twin Jet', '22'
+'5813', 'Air Mandalay', '22'
+'9809', 'Eastar Jet', '22'
+'13899', 'Cambodia Angkor Air (K6)', '22'
+'3148', 'Kish Air', '21'
+'18169', 'Patriot Airways', '21'
+'231', 'Arkia Israel Airlines', '20'
+'508', 'Aurigny Air Services', '20'
+'2058', 'Druk Air', '20'
+'2524', 'Gazpromavia', '20'
+'2585', 'Golden Air', '20'
+'2774', 'Hong Kong Express Airways', '20'
+'3287', 'Linhas A', '20'
+'3545', 'Moskovia Airlines', '20'
+'4438', 'Skynet Airlines', '20'
+'4550', 'Southern Winds Airlines', '20'
+'4752', 'Surinam Airways', '20'
+'10955', 'MexicanaLink', '20'
+'11838', 'Arik Niger', '20'
+'16120', 'ZABAIKAL AIRLINES', '20'
+'19676', 'Rainbow Air Polynesia', '20'
+'3437', 'Maya Island Air', '19'
+'13335', 'Homer Air', '19'
+'15893', 'Marysya Airlines', '19'
+'2538', 'Georgian Airways', '18'
+'3393', 'Mango', '18'
+'3734', 'Northwestern Air', '18'
+'3850', 'Jetstar Pacific', '18'
+'5156', 'TAM Mercosur', '18'
+'8359', 'Star Peru (2I)', '18'
+'8576', 'Fly540', '18'
+'13200', 'Fuji Dream Airlines', '18'
+'18232', 'BQB Lineas Aereas', '18'
+'20270', 'Severstal Air Company', '18'
+'225', 'Air Tahiti Nui', '17'
+'2226', 'Euro Exec Express', '17'
+'4513', 'Servicios de Transportes A', '17'
+'1954', 'DAT Danish Air Transport', '16'
+'2896', 'Interlink Airlines', '16'
+'3391', 'Mandala Airlines', '16'
+'3589', 'Nasair', '16'
+'3721', 'Northern Dene Airways', '16'
+'4066', 'Proflight Commuter Services', '16'
+'5083', 'Turkmenistan Airlines', '16'
+'11763', 'Peruvian Airlines', '16'
+'16133', 'Yeti Airways', '16'
+'16624', 'Tway Airlines', '16'
+'17083', 'Nile Air', '16'
+'19810', 'Regional Air Iceland', '16'
+'179', 'Aeroper', '14'
+'1034', 'Aerolane', '14'
+'1206', 'Aero Lanka', '14'
+'1829', 'Comair', '14'
+'2622', 'Grupo TACA', '14'
+'2750', 'Helvetic Airways', '14'
+'3857', 'Pacific East Asia Cargo Airlines', '14'
+'4822', 'Shuttle America', '14'
+'5016', 'Tropic Air', '14'
+'5354', 'Varig Log', '14'
+'10758', 'Safi Airlines', '14'
+'16882', 'Polet Airlines (Priv)', '14'
+'18529', 'T.J. Air', '14'
+'221', 'Air Atlanta Icelandic', '13'
+'341', 'Air North Charter - Canada', '13'
+'4234', 'Air Rarotonga', '13'
+'10128', 'Dennis Sky', '13'
+'608', 'Air Zimbabwe', '12'
+'807', 'Air Dolomiti', '12'
+'1338', 'Aerolineas Galapagos (Aerogal)', '12'
+'1401', 'Belair Airlines', '12'
+'1500', 'Metro Batavia', '12'
+'2293', 'Express One International', '12'
+'2954', 'Israir', '12'
+'3354', 'MIAT Mongolian Airlines', '12'
+'3432', 'Maxair', '12'
+'9666', 'Virgin Pacific', '12'
+'16660', 'AeroWorld ', '12'
+'17408', 'BusinessAir', '12'
+'19610', 'Air Lituanica', '12'
+'20047', 'Eagle Atlantic Airlines', '12'
+'2418', 'FlyLal', '11'
+'4808', 'Sat Airlines', '11'
+'10912', 'Alaska Seaplane Service', '11'
+'68', 'Air Tindi', '10'
+'132', 'Air Bosna', '10'
+'319', 'Air Seychelles', '10'
+'1441', 'bmibaby', '10'
+'2748', 'Hello', '10'
+'3201', 'LAN Argentina', '10'
+'3613', 'Nationwide Airlines', '10'
+'3865', 'Pacific Wings', '10'
+'4805', 'Saratov Aviation Division', '10'
+'5523', 'Zoom Airlines', '10'
+'9829', 'Canadian National Airways', '10'
+'10675', 'Sharp Airlines', '10'
+'10739', 'Air Choice One', '10'
+'10800', 'Star1 Airlines', '10'
+'16963', 'Air Arabia Egypt', '10'
+'19804', 'All America', '10'
+'20686', 'SkyBahamas Airlines', '10'
+'881', 'Atlantic Airways', '9'
+'2989', 'Japan Asia Airways', '9'
+'3805', 'Orenburg Airlines', '9'
+'397', 'Arrow Air', '8'
+'896', 'Air Iceland', '8'
+'998', 'Air Koryo', '8'
+'2264', 'Excel Airways', '8'
+'2324', 'Far Eastern Air Transport', '8'
+'2692', 'Hawkair', '8'
+'3618', 'Nauru Air Corporation', '8'
+'3637', 'Nepal Airlines', '8'
+'3826', 'Overland Airways', '8'
+'3969', 'Piedmont Airlines (1948-1989)', '8'
+'5368', 'VRG Linhas Aereas', '8'
+'10737', 'ALAK', '8'
+'11794', 'Catovair', '8'
+'11808', 'Zambia Skyways', '8'
+'11948', 'Viking Hellas', '8'
+'16615', 'Mongolian International Air Lines ', '8'
+'17099', 'Starbow Airlines', '8'
+'18825', 'Flightlink Tanzania', '8'
+'18828', 'IzAvia', '8'
+'11857', 'Royal Falcon', '7'
+'42', 'ABSA - Aerolinhas Brasileiras', '6'
+'336', 'Air Nippon', '6'
+'477', 'Air Saint Pierre', '6'
+'1669', 'Carpatair', '6'
+'1966', 'Daallo Airlines', '6'
+'3534', 'Myway Airlines', '6'
+'3547', 'Motor Sich', '6'
+'3811', 'Orient Thai Airlines', '6'
+'3834', 'PAN Air', '6'
+'4388', 'Star Flyer', '6'
+'4735', 'Santa Barbara Airlines', '6'
+'5002', 'Tiara Air', '6'
+'5297', 'Valuair', '6'
+'8809', 'Island Air (WP)', '6'
+'9784', 'Yangon Airways', '6'
+'10776', 'Salmon Air', '6'
+'14061', 'LSM Airlines', '6'
+'16707', 'Hankook Airline', '6'
+'16844', 'BVI Airways', '6'
+'16960', 'Asian Wings Airways', '6'
+'20160', 'City Airways', '6'
+'641', 'Rossiya-Russian Airlines', '5'
+'3097', 'Kam Air', '5'
+'3123', 'Kenmore Air', '5'
+'21012', 'Fly One', '5'
+'116', 'Air Italy', '4'
+'1008', 'Albanian Airlines', '4'
+'1048', 'Atlantis European Airways', '4'
+'1230', 'Aero-Service', '4'
+'1508', 'Berjaya Air', '4'
+'2104', 'East African', '4'
+'2419', 'FlyNordic', '4'
+'2541', 'Georgian National Airlines', '4'
+'3781', 'Omni Air International', '4'
+'3835', 'PB Air', '4'
+'10650', 'Pal airlines', '4'
+'11806', 'Compagnie Africaine d\\\\\'Aviation', '4'
+'11963', 'Starline.kz', '4'
+'17023', 'Asia Wings', '4'
+'19016', 'Apache Air', '4'
+'10', '40-Mile Air', '2'
+'29', 'Askari Aviation', '2'
+'106', 'Air Europe', '2'
+'109', 'Alaska Central Express', '2'
+'146', 'Air Salone', '2'
+'442', 'Air Sinai', '2'
+'563', 'Aeroline GmbH', '2'
+'1109', 'Astair', '2'
+'1266', 'Avient Aviation', '2'
+'1769', 'China United Airlines', '2'
+'2094', 'Eagle Air', '2'
+'2731', 'Helijet', '2'
+'2757', 'Hex\'Air', '2'
+'2881', 'Interair South Africa', '2'
+'3498', 'Midwest Airlines (Egypt)', '2'
+'4436', 'Sibaviatrans', '2'
+'4496', 'Skyservice Airlines', '2'
+'9620', 'Gabon Airlines', '2'
+'11814', 'SmartLynx Airlines', '2'
+'16150', 'TransHolding System', '2'
+'16262', 'Fly Colombia ( Interliging Flights )', '2'
+'17095', 'Fly 6ix', '2'
+'17519', 'SENIC AIRLINES', '2'
+'18700', 'SOCHI AIR CHATER', '2'
+'18946', 'VivaColombia', '2'
+'19944', 'International AirLink', '2'
+'20565', 'Boutique Air (Priv)', '2'
+'2260', 'Eurowings', '1'

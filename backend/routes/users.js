@@ -1,8 +1,8 @@
-var express = require("express");
-var router = express.Router();
-var db = require("../database");
-var bcrypt = require("bcrypt");
-var saltRounds = 10;
+const express = require("express");
+const router = express.Router();
+const db = require("../database");
+const bcrypt = require("bcryptjs");
+const saltRounds = 10;
 
 router.post("/register", (req, res) => {
   const first_name = req.body.first_name;

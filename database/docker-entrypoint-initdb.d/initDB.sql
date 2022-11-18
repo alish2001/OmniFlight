@@ -29,7 +29,7 @@ CREATE TABLE `planes` (
   `planeUID` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
   `name` VARCHAR(75)
 );
--- Routes(routeUID, airlineUID, originairportUID, destairportUID, codeshare, stops, equipment)
+-- Routes(routeUID, airlineUID, originairportUID, destairportUID, codeshare, stops, popularity)
 CREATE TABLE `routes` (
   `routeUID` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
   `airlineUID` INT UNSIGNED NOT NULL,

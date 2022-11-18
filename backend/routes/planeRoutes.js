@@ -1,6 +1,6 @@
-var express = require("express");
-var router = express.Router();
-var db = require("../database");
+const express = require("express");
+const router = express.Router();
+const db = require("../database");
 
 router.post("/getRoutes", (req, res) => {
   const origin_city = req.body.origin_city;
@@ -23,7 +23,7 @@ router.post("/getRoutes", (req, res) => {
       "INNER JOIN  (SELECT * from omniflight.airports WHERE city LIKE '%" +
       dest_city +
       "') as dest ON r.destAirportUID = dest.airportUID " +
-      "INNER JOIN omniflight.airlines as airline ON r.airlineUID = airline.airlineUID LIMIT 250;",
+      "INNER JOIN omniflight.airlines as airline ON r.airlineUID = airline.airlineUID LIMIT 100;",
     (err, result) => {
       console.log(err);
       res.send(result);
@@ -68,7 +68,7 @@ router.post("/getFilterRoutes", (req, res) => {
       "') as dest ON r.destAirportUID = dest.airportUID " +
       "INNER JOIN (SELECT * from omniflight.airlines WHERE name LIKE '%" +
       airline_name +
-      "%') as airline ON r.airlineUID = airline.airlineUID LIMIT 250;",
+      "%') as airline ON r.airlineUID = airline.airlineUID LIMIT 100;",
     (err, result) => {
       console.log(err);
       res.send(result);

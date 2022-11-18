@@ -1,5 +1,5 @@
-var mysql = require("mysql2");
-var db = mysql.createConnection({
+const mysql = require("mysql2");
+const db = mysql.createConnection({
   user: process.env.DB_USER || "user",
   host: process.env.DB_ADDRESS || "127.0.0.1",
   password: process.env.DB_PASSWORD || "password",

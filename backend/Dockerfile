@@ -7,12 +7,13 @@ WORKDIR /app
 # Copy app files
 COPY . /app/
 
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
+# RUN npm install
 
-# Bundle app source
-COPY . .
+# If you are building your code for production
+RUN npm ci --only=production
+ENV NODE_ENV production
 
 EXPOSE 9000
+
+USER node
 CMD [ "npm", "start" ]

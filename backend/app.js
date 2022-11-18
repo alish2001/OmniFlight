@@ -1,17 +1,17 @@
-var createError = require("http-errors");
-var express = require("express");
-var cors = require("cors");
-var path = require("path");
+const createError = require("http-errors");
+const express = require("express");
+const cors = require("cors");
+const path = require("path");
 const mysql = require("mysql2");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
 
-var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
-var planeRoutesRouter = require("./routes/planeRoutes");
-var favRouter = require("./routes/favorites");
+const indexRouter = require("./routes/index");
+const usersRouter = require("./routes/users");
+const planeRoutesRouter = require("./routes/planeRoutes");
+const favRouter = require("./routes/favorites");
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
