@@ -7,7 +7,13 @@ import Map from "../../components/Map";
 import SearchPanel from "../../components/SearchPanel";
 import FavoritesPanel from "../../components/FavoritesPanel";
 import { useDispatch, useSelector } from "react-redux";
-import { getFilteredRoutes, onViewFavorites } from "../../api";
+import {
+  getCities,
+  getCountries,
+  getFilteredRoutes,
+  getRoutes,
+  onViewFavorites,
+} from "../../api";
 import {
   setFavoriteRoutes,
   setFilteredRoutes,
@@ -18,6 +24,7 @@ const { Title, Text, Link } = Typography;
 const HomePage = () => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
+
   const items = [
     getItem("0", <SearchOutlined style={{ fontSize: "25px" }} />, "Search"),
     getItem("1", <StarFilled style={{ fontSize: "25px" }} />, "Favorites"),
@@ -46,12 +53,9 @@ const HomePage = () => {
 
   useEffect(() => {
     const fetchRoutes = async () => {
-      let routes = await getFilteredRoutes({
+      let routes = await getRoutes({
         origin_city: "Toronto",
-        origin_country: "",
         dest_city: "",
-        dest_country: "",
-        airline_name: "",
       });
       dispatch(setFilteredRoutes({ filteredRoutes: routes.data }));
     };
@@ -64,6 +68,7 @@ const HomePage = () => {
         console.log("There was an error getting the favorites!");
       }
     };
+
     fetchFavorites();
     fetchRoutes();
   }, []);
