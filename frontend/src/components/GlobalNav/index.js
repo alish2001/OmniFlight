@@ -1,5 +1,5 @@
 import { UserOutlined } from "@ant-design/icons";
-import { Layout, Menu, Row, Typography } from "antd";
+import { Layout, Menu, Row, Typography, Col } from "antd";
 import { useSelector } from "react-redux";
 import React, { useState } from "react";
 
@@ -30,7 +30,13 @@ const GlobalNav = () => {
       style={{ position: "absolute", top: 0, zIndex: 10, width: "100%" }}
     >
       <Row justify="space-between">
-        <div style={{ fontSize: "25px", color: "white" }}>Omniflight</div>
+        <Col>
+          <img
+            className="company_logo"
+            src="/omniflight_logo.png"
+            alt="image"
+          />
+        </Col>
         <Menu theme="dark" mode="horizontal" items={items} />
       </Row>
     </Header>
