@@ -31,8 +31,12 @@ const Register = () => {
       }}
     >
       <Card style={{ width: 500 }}>
-        <Col align="center">
-          <Title>Omniflight</Title>
+        <Col align="center" style={{ padding: "20px" }}>
+          <img
+            className="company_logo_big"
+            src="/omniflight_logo_dark.png"
+            alt="image"
+          />
           {error && <Text type="danger">Register Failed!</Text>}
         </Col>
         <Form
