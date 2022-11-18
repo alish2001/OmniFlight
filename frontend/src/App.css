@@ -4,7 +4,12 @@
 }
 
 .company_logo {
-  height: 40px;
+  height: 30px;
+  width: auto;
+}
+
+.company_logo_big {
+  height: 45px;
   width: auto;
 }
 .App-logo {

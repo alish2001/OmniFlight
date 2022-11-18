@@ -55,9 +55,18 @@ const Login = () => {
       }}
     >
       <Card style={{ width: 500 }}>
-        <Col align="center">
-          <Title>Omniflight</Title>
-          {error && <Text type="danger">Login Failed!</Text>}
+        <Col align="center" style={{ padding: "20px" }}>
+          <img
+            className="company_logo_big"
+            src="/omniflight_logo_dark.png"
+            alt="image"
+          />
+
+          {error && (
+            <Text style={{ marginTop: "15px" }} type="danger">
+              Login Failed!
+            </Text>
+          )}
         </Col>
         <Form
           name="login"
