@@ -1,4 +1,6 @@
-![alt text](https://github.com/alish2001/OmniFlight/blob/master/frontend/public/omniflight_logo.png?raw=true)
+<p align="center">
+<img src="https://github.com/alish2001/OmniFlight/blob/master/frontend/public/omniflight_logo_black_background.png?raw=true">
+</p> 
 
 Direct flights from more than 1000 airlines on an interactive flight map. Search, find, compare, and save any flight path or airline route with our flight maps!
 
