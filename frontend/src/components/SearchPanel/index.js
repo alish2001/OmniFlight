@@ -28,6 +28,7 @@ import "./SearchPanel.scss";
 import React, { useState } from "react";
 import RouteCard from "../RouteCard";
 import { useEffect } from "react";
+import debounce from "lodash/debounce";
 import {
   getCountries,
   getCities,
@@ -36,6 +37,7 @@ import {
   getRoutes,
 } from "../../api";
 import { setFilteredRoutes } from "../../state/reducers/routesReducer";
+import { set } from "lodash";
 const { Content, Sider } = Layout;
 const { Title, Text, Link } = Typography;
 
@@ -52,6 +54,8 @@ const SearchPanel = () => {
 
   const [origin_city, setOriginCity] = useState("");
   const [dest_city, setDestCity] = useState("");
+  const [origin_city_options, setOriginCityOptions] = useState(cities);
+  const [dest_city_options, setDestCityOptions] = useState(cities);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -66,6 +70,11 @@ const SearchPanel = () => {
 
     fetchData();
   }, []);
+
+  useEffect(() => {
+    setDestCityOptions(cities);
+    setOriginCityOptions(cities);
+  }, [cities]);
 
   const onSearch = async () => {
     let routes = await getRoutes({ origin_city, dest_city });
@@ -179,10 +188,18 @@ const SearchPanel = () => {
           value={origin_city}
           onChange={(data) => setOriginCity(data)}
           placeholder="Where from?"
-          filterOption={(input, option) =>
-            (option?.value ?? "").toLowerCase().includes(input.toLowerCase())
-          }
-          options={cities && cities}
+          onSearch={debounce((searchText) => {
+            setOriginCityOptions(
+              !searchText
+                ? cities
+                : cities.filter((option) =>
+                    option.value
+                      .toLowerCase()
+                      .includes(searchText.toLowerCase())
+                  )
+            );
+          }, 500)}
+          options={origin_city_options && origin_city_options}
         />
 
         <AutoComplete
@@ -190,10 +207,18 @@ const SearchPanel = () => {
           value={dest_city}
           onChange={(data) => setDestCity(data)}
           placeholder="Where to?"
-          filterOption={(input, option) =>
-            (option?.value ?? "").toLowerCase().includes(input.toLowerCase())
-          }
-          options={cities && cities}
+          onSearch={debounce((searchText) => {
+            setDestCityOptions(
+              !searchText
+                ? cities
+                : cities.filter((option) =>
+                    option.value
+                      .toLowerCase()
+                      .includes(searchText.toLowerCase())
+                  )
+            );
+          }, 500)}
+          options={dest_city_options && dest_city_options}
         />
 
         <Divider />
