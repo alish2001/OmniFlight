@@ -10,6 +10,8 @@ const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 const planeRoutesRouter = require("./routes/planeRoutes");
 const favRouter = require("./routes/favorites");
+const popularRouter = require("./routes/popular");
+const routeInfoRouter = require("./routes/summary");
 
 const app = express();
 
@@ -29,6 +31,8 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/routes", planeRoutesRouter);
 app.use("/favorites", favRouter);
+app.use("/popular", popularRouter);
+app.use("/summary", routeInfoRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

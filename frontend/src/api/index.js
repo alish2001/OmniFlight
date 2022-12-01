@@ -127,3 +127,41 @@ export const onRemoveFavorite = async (values) => {
     return false;
   }
 };
+
+export const onViewPopular = async () => {
+  try {
+    const response = await Axios.post("http://localhost:9000/popular/");
+    console.log(response);
+    return response;
+  } catch (err) {
+    return false;
+  }
+};
+
+export const getSummaryPlaneInfo = async (values) => {
+  const body = { ...values };
+  try {
+    const response = await Axios.post(
+      "http://localhost:9000/summary/plane/",
+      body
+    );
+    console.log(response);
+    return response;
+  } catch (err) {
+    return false;
+  }
+};
+
+export const getSummaryAirlineInfo = async (values) => {
+  const body = { ...values };
+  try {
+    const response = await Axios.post(
+      "http://localhost:9000/summary/airline/",
+      body
+    );
+    console.log(response);
+    return response;
+  } catch (err) {
+    return false;
+  }
+};

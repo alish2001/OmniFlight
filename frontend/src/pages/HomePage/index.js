@@ -1,11 +1,13 @@
 import { Col, Layout, Typography, Menu, Drawer, Space, Button } from "antd";
 import "./HomePage.scss";
-import { SearchOutlined, StarFilled, CloseOutlined } from "@ant-design/icons";
+import { SearchOutlined, StarFilled, TeamOutlined, BarChartOutlined, CloseOutlined } from "@ant-design/icons";
 import React, { useEffect, useState } from "react";
 import { IoAirplaneOutline } from "react-icons/fa";
 import Map from "../../components/Map";
 import SearchPanel from "../../components/SearchPanel";
 import FavoritesPanel from "../../components/FavoritesPanel";
+import PopularPanel from "../../components/PopularPanel";
+import SummaryPanel from "../../components/SummaryPanel";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getCities,
@@ -28,11 +30,15 @@ const HomePage = () => {
   const items = [
     getItem("0", <SearchOutlined style={{ fontSize: "25px" }} />, "Search"),
     getItem("1", <StarFilled style={{ fontSize: "25px" }} />, "Favorites"),
+    getItem("2", <TeamOutlined style={{ fontSize: "25px" }} />, "Popular"),
+    getItem("3", <BarChartOutlined style={{ fontSize: "25px" }} />, "Summary"),
   ];
 
   const panels = [
     { title: "Search Flights", component: <SearchPanel /> },
     { title: "Favorite Flights", component: <FavoritesPanel /> },
+    { title: "Popular Routes", component: <PopularPanel /> },
+    { title: "Summary Statistics", component: <SummaryPanel /> },
   ];
 
   const [selectedPanel, setSelectedPanel] = useState(panels[0]);
@@ -105,7 +111,6 @@ const HomePage = () => {
       >
         {selectedPanel.component}
       </Drawer>
-
       <Map />
     </Layout>
   );
