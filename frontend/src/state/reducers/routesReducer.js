@@ -21,9 +21,6 @@ export const routesSlice = createSlice({
         (route) => route.routeUID !== action.payload.routeUID
       );
     },
-    setPopularRoutes: (state, action) => {
-      state.popularRoutes = action.payload.popularRoutes;
-    },
   },
 });
 
@@ -32,7 +29,6 @@ export const {
   setFavoriteRoutes,
   addToFavorites,
   removeFromFavorites,
-  setPopularRoutes,
 } = routesSlice.actions;
 
 export default routesSlice.reducer;
