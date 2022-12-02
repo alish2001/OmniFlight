@@ -1,5 +1,4 @@
-# Base image
-FROM node
+FROM node:16
 
 # Set the working directory to /app inside the container
 WORKDIR /app
@@ -22,5 +21,6 @@ EXPOSE 3000
 
 # Set the env to "production"
 ENV NODE_ENV production
+
 # Start the app
 CMD [ "npx", "serve", "build" ]
